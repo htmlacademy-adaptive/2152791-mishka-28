@@ -1,0 +1,155 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contacts__wrapper-title {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 23px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: 50px;
+    margin-top: 87px;
+    margin-bottom: 45px;
+  }
+}
+
+.contacts__wrapper-title::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 167px;
+  background-color: #62d1bA;
+  bottom: -53px;
+  left: 78px;
+
+  @media (min-width: @tablet-width) {
+    width: 204px;
+    bottom: -79px;
+  }
+}
+
+.contacts__wrapper-table {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0;
+  margin-left: 27px;
+  width: 263px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 310px;
+    margin-left: 47px;
+  }
+}
+
+.contacts__wrapper-line {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: start;
+  }
+}
+
+.contacts__wrapper-line:first-child {
+  margin-bottom: 28px;
+}
+
+.contacts__wrapper-cell:last-child {
+  width: 180px;
+}
+
+.contacts__wrapper-line--last {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -61px;
+    right: -333px;
+  }
+}
+
+.contacts__wrapper-cell--mail {
+  @media (min-width: @tablet-width) {
+    margin-left: 23px;
+  }
+}
+
+.contacts__wrapper-cell--adress {
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.contacts-image {
+  margin-top: 60px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    width: 768px;
+    height: 457px;
+  }
+}
+
+.contacts-icon {
+  width: 67px;
+  height: 100px;
+  position: absolute;
+  top: 453px;
+  left: 138px;
+  background-color: red;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 460px;
+    left: 365px;
+  }
+}
+
+.contacts-flag {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 47px;
+    height: 81px;
+    position: absolute;
+    top: 65px;
+    right: 55px;
+    background-color: red;
+  }
+}
+
+.contacts-button {
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    line-height: 20px;
+    width: 230px;
+    margin-top: 55px;
+    margin-bottom: 57px;
+  }
+}
