@@ -32,6 +32,13 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 225px;
+    margin-top: 80px;
+  }
 }
 
 .hero__upper-description {
@@ -52,6 +59,13 @@
     margin-right: 63px;
     margin-top: -8px;
     margin-bottom: 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    right: 905px;
+    top: 40px;
     text-align: center;
   }
 }
@@ -81,6 +95,13 @@
     margin-top: 37px;
     margin-bottom: 35px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin-left: 225px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
 }
 
 .hero__wrapper-table {
@@ -88,13 +109,18 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: gray;
+  color: @gray;
   margin-left: 28px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     margin-left: 48px;
     width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 223px;
+    width: 295px;
   }
 }
 
@@ -109,8 +135,18 @@
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
-    padding-bottom: 2px;
-    height: 40px;
+    padding-bottom: 4px;
+    height: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 43px;
+  }
+}
+
+.hero__wrapper-line:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 42px;
   }
 }
 
@@ -122,7 +158,11 @@
 
   @media (min-width: @tablet-width) {
     width: 150px;
-    margin-right: 7px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 11px;
   }
 }
 
@@ -137,6 +177,15 @@
     right: 50px;
     width: 334px;
     height: 404px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -145px;
+    right: 50px;
+    width: 525px;
+    height: 636px;
+    z-index: -1;
   }
 }
 
@@ -155,6 +204,11 @@
     margin-top: 57px;
     margin-bottom: 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 300px;
+    margin-top: 112px;
+  }
 }
 
 .hero__wrapper-button {
@@ -168,6 +222,11 @@
     margin-left: 50px;
     margin-bottom: 52px;
     width: 292px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+    margin-bottom: 75px;
   }
 }
 
@@ -185,5 +244,9 @@
     left: 0;
     width: 768px;
     height: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }

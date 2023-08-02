@@ -12,7 +12,6 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 79px;
-  box-shadow: 0px 1px 0px 0px #ececec;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -28,7 +27,7 @@
 .main-nav__mobile-logo {
   width: 86px;
   height: 35px;
-  background-color: red;
+  fill: black;
 }
 
 .main-nav__mobile-toggle {
@@ -36,9 +35,15 @@
   height: 14px;
   margin-right: 31px;
   margin-left: 67px;
-  background-color: red;
   border: none;
   cursor: pointer;
+  background-color: white;
+}
+
+.main-nav__mobile-burger {
+  width: 20px;
+  height: 14px;
+  fill: black;
 }
 
 .main-nav__mobile--open {
@@ -55,18 +60,20 @@
   z-index: 2;
 }
 
-.hidden {
-  display: none;
-}
-
 .main-nav__mobile-close {
   width: 21px;
   height: 21px;
   margin-right: 30px;
   margin-left: 67px;
-  background-color: blue;
   border: none;
   cursor: pointer;
+  background-color: white;
+}
+
+.main-nav__mobile-close-icon {
+  width: 21px;
+  height: 21px;
+  fill: black;
 }
 
 .main-nav__mobile-list {
@@ -99,6 +106,20 @@
   color: black;
   text-decoration: none;
   margin-left: 76px;
+  border: none;
+}
+
+.main-nav__mobile-button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  text-decoration: none;
+  margin-left: 76px;
+  padding: 0;
+  border: none;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -108,7 +129,6 @@
   position: absolute;
   top: 32px;
   left: 32px;
-  background-color: red;
 }
 
 .main-nav__tablet {
@@ -148,7 +168,7 @@
   @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
-    background-color: red;
+    fill: black;
     margin-left: 48px;
   }
 }
@@ -171,7 +191,7 @@
   @media (min-width: @tablet-width) {
     width: 18px;
     height: 18px;
-    background-color: red;
+    fill: black;
   }
 }
 
@@ -179,7 +199,7 @@
   @media (min-width: @tablet-width) {
     width: 21px;
     height: 18px;
-    background-color: red;
+    fill: black;
     margin-right: 30px;
   }
 }
@@ -194,6 +214,23 @@
     color: black;
     display: flex;
     align-items: center;
+  }
+}
+
+.main-nav__tablet-button {
+  @media (min-width: @tablet-width) {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -235,7 +272,7 @@
     font-size: 17px;
     line-height: 24px;
     text-decoration: none;
-    color: @black;
+    color: black;
   }
 }
 
@@ -252,7 +289,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: @gray;
+    color: #444444;
   }
 }
 
@@ -307,9 +344,26 @@
     font-size: 17px;
     line-height: 24px;
     text-decoration: none;
-    color: @black;
+    color: black;
     display: flex;
     align-items: center;
+  }
+}
+
+.main-nav__desktop-button {
+  @media (min-width: @desktop-width) {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -317,7 +371,7 @@
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
-    background-color: red;
+    fill: black;
     margin-left: 75px;
     margin-right: 100px;
   }
@@ -347,7 +401,7 @@
   @media (min-width: @desktop-width) {
     width: 18px;
     height: 18px;
-    background-color: red;
+    fill: black;
     cursor: pointer;
   }
 }
@@ -356,7 +410,7 @@
   @media (min-width: @desktop-width) {
     width: 21px;
     height: 18px;
-    background-color: red;
+    fill: black;
     margin-left: 31px;
     margin-right: 30px;
   }
@@ -394,7 +448,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: @gray;
+    color: #444444;
   }
 }
 
@@ -404,6 +458,6 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: @gray;
+    color: #444444;
   }
 }

@@ -18,6 +18,12 @@
     background-image: url("../img/index/background-promo-tablet.png");
     background-position: 0 -65px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 680px;
+    background-image: url("../img/index/background-promo-desktop.png");
+    background-position: 0 -65px;
+  }
 }
 
 .promo__wrapper-title {
@@ -35,6 +41,15 @@
     line-height: 50px;
     width: 600px;
     margin-top: 90px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+    text-align: center;
+    margin-top: 95px;
     margin-bottom: 0;
   }
 }
@@ -63,6 +78,12 @@
     min-height: 119px;
     width: 334px;
     top: -120px;
+    left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    top: -116px;
     left: 50px;
   }
 }
@@ -113,6 +134,10 @@
     margin-top: 5px;
     margin-right: 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 35px;
+  }
 }
 
 .promo-wave {
@@ -127,5 +152,9 @@ display: none;
     width: 768px;
     height: 24px;
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }

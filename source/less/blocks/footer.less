@@ -17,14 +17,12 @@
   @media (min-width: @tablet-width) {
     width: 102px;
     height: 34px;
-    background-color: red;
     margin-left: 50px;
     margin-bottom: 5px;
-    display: block;
+  }
 
-    @media (min-width: @desktop-width) {
-      margin-bottom: 10px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -53,7 +51,7 @@
 .page-footer__link-icon {
   width: 28px;
   height: 22px;
-  background-color: red;
+  fill: black;
 }
 
 .page-footer__link:not(:first-child) {
@@ -64,15 +62,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80px;
+  min-height: 34px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    min-height: 34px;
     margin-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 80px;
     margin-bottom: 10px;
   }
 }
@@ -101,11 +99,15 @@
 .page-footer__copyright-icon {
   width: 27px;
   height: 34px;
-  background-color: red;
+  fill: black;
   margin-left: 27px;
-  margin-right: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-left: 29px;
+    margin-right: 53px;
   }
 }
