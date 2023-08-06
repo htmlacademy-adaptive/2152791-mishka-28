@@ -20,6 +20,17 @@
     margin-left: 50px;
     margin-bottom: 5px;
     display: block;
+    fill: @black;
+    cursor: pointer;
+
+    &&:hover {
+      fill: #63d1bb;
+    }
+
+    &&:active {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -53,6 +64,15 @@
   width: 28px;
   height: 22px;
   fill: @black;
+
+  &&:hover {
+    fill: #63d1bb;
+  }
+
+  &&:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__link:not(:first-child) {
@@ -65,6 +85,7 @@
   align-items: center;
   min-height: 34px;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 5px;
@@ -74,6 +95,15 @@
     min-height: 80px;
     margin-bottom: 10px;
   }
+}
+
+.page-footer__copyright:hover .page-footer__copyright-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__copyright:active .page-footer__copyright-icon {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 .page-footer__copyright::before {
@@ -95,6 +125,8 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 
 .page-footer__copyright-icon {

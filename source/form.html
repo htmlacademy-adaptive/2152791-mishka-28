@@ -32,7 +32,7 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
-      <div class="hidden">
+      <div class="main-nav__mobile main-nav__mobile--open hidden">
         <ul class="main-nav__mobile-list">
           <li class="main-nav__mobile-item">
             <a class="main-nav__mobile-index" href="index.html">
@@ -64,7 +64,8 @@
             <button class="main-nav__mobile-button" type="button">
               <svg class="main-nav__mobile-icon" width="21" height="18">
                 <use xlink:href="./img/sprite.svg#basket-icon"></use>
-              </svg>Корзина: пока
+              </svg>
+              Корзина: пока
               пуста</button>
           </li>
         </ul>
@@ -72,7 +73,9 @@
       <div class="main-nav__tablet">
         <ul class="main-nav__tablet-upper">
           <li class="main-nav__tablet-item">
-            <svg class="main-nav__tablet-item-icon"></svg>
+            <svg class="main-nav__tablet-item-icon" width="113" height="46">
+              <use xlink:href="./img/sprite.svg#logo-tablet"></use>
+            </svg>
           </li>
           <li class="main-nav__tablet-item">
             <a class="main-nav__tablet-link main-nav__tablet-link--search" href="#">
@@ -111,7 +114,10 @@
             <a class="main-nav__desktop-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__desktop-item">
-            <svg class="main-nav__desktop-icon"></svg>
+            <svg class="main-nav__desktop-logo" width="149" height="72">
+              <use xlink:href="./img/sprite.svg#logo-desktop"></use>
+            </svg>
+            <span class="visually-hidden">Логотип магазина.</span>
           </li>
           <li class="main-nav__desktop-item">
             <a class="main-nav__desktop-link main-nav__desktop-link--search" href="#">
@@ -249,8 +255,8 @@
             </svg>
           </div>
           <div class="requisites-add__wrapp">
-            <label class="requisites-add__wrapp-description" for="email">E-mail</label>
-            <input class="requisites-add__wrapp-field requisites-add__wrapp-field--mail" id="email" type="email"
+            <label class="requisites-add__wrapp-description requisites-add__wrapp-description--mail" for="email">E-mail</label>
+            <input class="requisites-add__wrapp-field" id="email" type="email"
               placeholder="Ваш Email*" name="requisites" required>
             <svg class="requisites-add__wrapp-mail" width="32" height="21">
               <use xlink:href="./img/sprite.svg#mail-icon"></use>

@@ -3,11 +3,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: gray;
-  background-color: white;
+  color: @gray;
+  background-color: @white;
   width: 262px;
   min-height: 52px;
-  border: 2px solid gray;
+  border: 2px solid @gray;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -15,4 +15,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &&:hover {
+    background-color: @gray;
+    color: @white;
+  }
+
+  &&:active {
+    background-color: @gray;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

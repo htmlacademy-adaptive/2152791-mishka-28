@@ -24,13 +24,21 @@
   width: 86px;
   height: 35px;
   fill: @black;
+
+  &&:hover {
+    opacity: 0.6;
+  }
+
+  &&:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__mobile-toggle {
   width: 20px;
   height: 14px;
-  margin-right: 31px;
-  margin-left: 67px;
+  margin-right: 37px;
+  margin-left: 60px;
   border: none;
   cursor: pointer;
   background-color: @white;
@@ -107,6 +115,23 @@
   text-decoration: none;
   margin-left: 76px;
   border: none;
+
+  &&:hover {
+    opacity: 0.6;
+  }
+
+  &&:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__mobile-link:hover .main-nav__mobile-icon {
+  fill: #63d1bb;
+}
+
+.main-nav__mobile-link:active .main-nav__mobile-icon {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-nav__mobile-button {
@@ -121,11 +146,30 @@
   border: none;
   background-color: @white;
   cursor: pointer;
+
+  &&:hover {
+    opacity: 0.6;
+  }
+
+  &&:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__mobile-button:hover .main-nav__mobile-icon {
+  fill: #63d1bb;
+}
+
+.main-nav__mobile-button:active .main-nav__mobile-icon {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-nav__mobile-icon {
   width: 18px;
   height: 18px;
+  fill: @black;
+  opacity: 0.2;
   position: absolute;
   top: 32px;
   left: 32px;
@@ -166,10 +210,16 @@
 
 .main-nav__tablet-item-icon {
   @media (min-width: @tablet-width) {
-    width: 113px;
-    height: 46px;
     fill: @black;
     margin-left: 48px;
+
+    &&:hover {
+      opacity: 0.6;
+    }
+
+    &&:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -330,6 +380,15 @@
     margin-left: 73px;
     margin-right: 100px;
     fill: @black;
+    cursor: pointer;
+
+    &&:hover {
+      opacity: 0.6;
+    }
+
+    &&:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -357,6 +416,14 @@
     color: @black;
     display: flex;
     align-items: center;
+
+    &&:hover {
+      opacity: 0.6;
+    }
+
+    &&:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -374,7 +441,25 @@
     background-color: @white;
     border: none;
     cursor: pointer;
+
+    &&:hover {
+      opacity: 0.6;
+    }
+
+    &&:active {
+      opacity: 0.3;
+    }
   }
+}
+
+.main-nav__desktop-button:hover .main-nav__desktop-link-basket {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__desktop-button:active .main-nav__desktop-link-basket {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-nav__desktop-icon {
@@ -405,6 +490,16 @@
     border-right: 1px solid #ececec;
     cursor: default;
   }
+}
+
+.main-nav__desktop-link--search:hover .main-nav__desktop-link-search {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__desktop-link--search:active .main-nav__desktop-link-search {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-nav__desktop-link-search {

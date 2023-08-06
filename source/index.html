@@ -232,21 +232,23 @@
       <svg class="contacts-flag"></svg>
       <button class="contacts-button button" type="button">Напишите нам</button>
     </section>
-    <section class="busket">
-      <h4 class="busket-title">Добавить в корзину</h4>
-      <p class="busket-description">Выберите размер:</p>
-      <ul class="busket__list">
-        <li class="busket__item">
-          <button class="busket__item-button" type="button">S</button>
-        </li>
-        <li class="busket__item">
-          <button class="busket__item-button" type="button">M</button>
-        </li>
-        <li class="busket__item">
-          <button class="busket__item-button" type="button">L</button>
-        </li>
-      </ul>
-      <button class="busket-button button" type="submit">Добавить</button>
+    <section class="busket-overlay hidden">
+      <div class="busket">
+        <h4 class="busket-title">Добавить в корзину</h4>
+        <p class="busket-description">Выберите размер:</p>
+        <ul class="busket__list">
+          <li class="busket__item">
+            <button class="busket__item-button busket__item-button--active" type="button">S</button>
+          </li>
+          <li class="busket__item">
+            <button class="busket__item-button" type="button">M</button>
+          </li>
+          <li class="busket__item">
+            <button class="busket__item-button" type="button">L</button>
+          </li>
+        </ul>
+        <button class="busket-button button" type="submit">Добавить</button>
+      </div>
     </section>
   </main>
 
