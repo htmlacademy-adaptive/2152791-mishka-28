@@ -21,7 +21,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 89px;
+    margin-top: 87px;
   }
 }
 
@@ -47,7 +47,7 @@
     line-height: 57px;
     margin-left: 225px;
     margin-top: 78px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -65,9 +65,7 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     width: 668px;
-    line-height: 30px;
     margin-left: 50px;
-    margin-top: 0;
     margin-bottom: 61px;
   }
 
@@ -91,14 +89,14 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    width: 260px;
-    line-height: 24px;
+    width: 285px;
     margin-left: 50px;
-    margin-top: 0;
     margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 260px;
+    line-height: 24px;
     margin-left: 225px;
   }
 }
@@ -125,19 +123,16 @@
 
   @media (min-width: @tablet-width) {
     width: 205px;
-    min-height: 52px;
-    margin-left: 30px;
     margin-bottom: 38px;
     position: absolute;
     bottom: 78px;
     right: 0;
+    border: none;
   }
 }
 
 .reviews__navigation-icon {
-  width: 50px;
-  height: 26px;
-  background-color: red;
+  fill: @black;
 }
 
 .reviews__navigation-icon:first-child {
@@ -175,7 +170,6 @@
   margin-bottom: 45px;
 
   @media (min-width: @tablet-width) {
-    font-weight: 700;
     font-size: 17px;
     margin-left: 20px;
     width: 175px;
@@ -183,32 +177,44 @@
     top: 80px;
     right: 50px;
   }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 30px;
-    margin-bottom: 45px;
-    top: 78px;
-  }
 }
 
-.reviews-wave {
+.hero-wave-mobile {
   position: absolute;
   bottom: -5px;
   left: 0;
   z-index: 1;
-  background-color: red;
-  width: 320px;
-  height: 6px;
+  fill: @gray;
 
   @media (min-width: @tablet-width) {
-    bottom: -15px;
+    display: none;
+  }
+}
+
+.hero-wave-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 1;
+    fill: @gray;
+    bottom: -20px;
     left: 0;
-    width: 768px;
-    height: 17px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1150px;
-    bottom: -70px;
+    display: none;
+  }
+}
+
+.hero-wave-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    fill: @gray;
+    bottom: -20px;
+    left: 0;
   }
 }

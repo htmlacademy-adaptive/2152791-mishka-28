@@ -10,14 +10,14 @@
   line-height: 30px;
   margin-left: 30px;
   margin-top: 39px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin-left: 50px;
     margin-top: 75px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +35,8 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    list-style-type: none;
     display: grid;
     grid-template-columns: 265px 325px;
     row-gap: 57px;
@@ -42,19 +44,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 265px 325px;
+    margin-left: 225px;
     row-gap: 57px;
     column-gap: 85px;
-    margin-left: 225px;
   }
 }
 
 .advantages__item {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__item--eco {
@@ -93,70 +91,84 @@
   }
 }
 
-.advantages__item-icon {
-  width: 33px;
-  height: 38px;
-  background-color: red;
+.advantages__item-icon-eco {
+  fill: #63d1bb;
   margin-left: 38px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 17px;
-    margin-left: 8px;
+    margin-bottom: 18px;
   }
 }
 
-.advantages__item-icon--two {
-  width: 47px;
-  height: 27px;
+.advantages__item-icon-style {
+  fill: #63d1bb;
   margin-left: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
-    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -1px;
   }
 }
 
-.advantages__item-icon--three {
-  width: 34px;
-  height: 27px;
+.advantages__item-icon-likes {
+  fill: #63d1bb;
   margin-left: 37px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 21px;
-    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+    margin-left: 8px;
+    margin-top: 3px;
   }
 }
 
-.advantages__item-icon--four {
-  width: 34px;
-  height: 34px;
+.advantages__item-icon-love {
+  fill: #63d1bb;
   margin-left: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 2px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+    margin-left: 3px;
+  }
+}
+
+.advantages__item-icon-domestic {
+  fill: #63d1bb;
+  margin-left: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    margin-left: -8px;
     margin-top: 2px;
   }
 }
 
-.advantages__item-icon--five {
-  width: 55px;
-  height: 23px;
-  margin-left: 24px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
-    margin-left: -7px;
-  }
-}
-
-.advantages__item-icon--six {
-  width: 33px;
-  height: 32px;
+.advantages__item-icon-package {
+  fill: #63d1bb;
   margin-left: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
-    margin-left: 2px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+    margin-left: 3px;
+    margin-top: 2px;
   }
 }
 
@@ -176,36 +188,55 @@
     margin-top: 0;
     margin-bottom: 0;
     width: 300px;
-    margin-left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 0;
-    margin-bottom: 0;
   }
 }
 
 .advantages__item-description--two {
   margin-top: 26px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .advantages__item-description--three {
   margin-top: 21px;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .advantages__item-description--four {
   margin-top: 17px;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .advantages__item-description--five {
   margin-top: 26px;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .advantages__item-description--six {
   margin-top: 20px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
