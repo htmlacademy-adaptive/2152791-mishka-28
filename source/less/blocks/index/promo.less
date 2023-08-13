@@ -129,6 +129,7 @@
   fill: #149080;
   margin-right: 36px;
   margin-left: 20px;
+  opacity: 0.5;
 
   @media (min-width: @desktop-width) {
     margin-right: 36px;
@@ -140,6 +141,7 @@
 .promo__choice-cube {
   fill: #149080;
   margin-right: 27px;
+  opacity: 0.5;
 
   @media (min-width: @tablet-width) {
     margin-right: 34px;
@@ -157,6 +159,22 @@
   @media (min-width: @tablet-width) {
     min-height: 124px;
   }
+}
+
+.promo__choice:hover .promo__choice-lamp {
+  opacity: 1;
+}
+
+.promo__choice:hover .promo__choice-cube {
+  opacity: 1;
+}
+
+.promo__choice:active .promo__choice-lamp {
+  opacity: 0.3;
+}
+
+.promo__choice:active .promo__choice-cube {
+  opacity: 0.3;
 }
 
 .promo-wave-tablet {

@@ -36,9 +36,9 @@ const html = () => {
 // Scripts
 
 export const scripts = () => {
-  return gulp.src('sourse/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'));
+  return gulp.src('source/js/*.js')
+  .pipe(gulp.dest('build/js'))
+  .pipe(browser.stream());
 }
 
 //Images

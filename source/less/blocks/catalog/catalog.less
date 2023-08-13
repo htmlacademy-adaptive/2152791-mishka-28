@@ -28,7 +28,7 @@
   }
 }
 
-.order__intro-wave-tablet {
+.catalog__intro-wave-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -43,7 +43,7 @@
   }
 }
 
-.order__intro-wave-desktop {
+.catalog__intro-wave-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -369,6 +369,15 @@
   width: 100px;
   height: 77px;
   cursor: pointer;
+
+  &&:hover {
+    transform: scale(1.2);
+
+    &&:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     top: 190px;

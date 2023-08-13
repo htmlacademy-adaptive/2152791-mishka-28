@@ -73,9 +73,12 @@
       <div class="main-nav__tablet">
         <ul class="main-nav__tablet-upper">
           <li class="main-nav__tablet-item">
-            <svg class="main-nav__tablet-item-icon" width="113" height="46">
-              <use xlink:href="./img/sprite.svg#logo-tablet"></use>
-            </svg>
+            <a class="main-nav__tablet-link" href="index.html">
+              <svg class="main-nav__tablet-item-icon" width="113" height="46">
+                <use xlink:href="./img/sprite.svg#logo-tablet"></use>
+              </svg>
+              <span class="visually-hidden">Логотип магазина.</span>
+            </a>
           </li>
           <li class="main-nav__tablet-item">
             <a class="main-nav__tablet-link main-nav__tablet-link--search" href="#">
@@ -114,10 +117,12 @@
             <a class="main-nav__desktop-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__desktop-item">
-            <svg class="main-nav__desktop-logo" width="149" height="72">
-              <use xlink:href="./img/sprite.svg#logo-desktop"></use>
-            </svg>
-            <span class="visually-hidden">Логотип магазина.</span>
+            <a class="main-nav__desktop-link" href="index.html">
+              <svg class="main-nav__desktop-logo" width="149" height="72">
+                <use xlink:href="./img/sprite.svg#logo-desktop"></use>
+              </svg>
+              <span class="visually-hidden">Логотип магазина.</span>
+            </a>
           </li>
           <li class="main-nav__desktop-item">
             <a class="main-nav__desktop-link main-nav__desktop-link--search" href="#">
@@ -167,65 +172,69 @@
       <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="order__type">
           <h2 class="order__type-title">Тип</h2>
-          <div class="order__type-wrapp">
-            <label class="order__radio-description">
-              <input class="order__radio" type="radio" name="type" checked>
-              <span class="order__radio-box"></span>
-              Аксессуар для интерьера
-            </label>
-          </div>
-          <div class="order__type-wrapp order__type-wrapp--last">
-            <label class="order__radio-description">
-              <input class="order__radio" type="radio" name="type">
-              <span class="order__radio-box"></span>
-              Детская игрушка
-            </label>
-          </div>
+          <ul class="order__type-list">
+            <li class="order__type-item">
+              <label class="order__radio-description">
+                <input class="order__radio" type="radio" name="type" checked>
+                <span class="order__radio-box"></span>
+                Аксессуар для интерьера
+              </label>
+            </li>
+            <li class="order__type-item">
+              <label class="order__radio-description">
+                <input class="order__radio" type="radio" name="type">
+                <span class="order__radio-box"></span>
+                Детская игрушка
+              </label>
+            </li>
+          </ul>
         </div>
         <div class="order__color">
           <h3 class="order__color-title">Цвет</h3>
-          <div class="order__wrapp-color">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color" checked>
-              <span class="order__check-box"></span>
-              Белый
-            </label>
-          </div>
-          <div class="order__wrapp-color">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color" checked>
-              <span class="order__check-box"></span>
-              Серый
-            </label>
-          </div>
-          <div class="order__wrapp-color order__wrapp-color--tiff">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color">
-              <span class="order__check-box"></span>
-              Тиффани
-            </label>
-          </div>
-          <div class="order__wrapp-color order__wrapp-color--black">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color">
-              <span class="order__check-box"></span>
-              Черный
-            </label>
-          </div>
-          <div class="order__wrapp-color order__wrapp-color--pink">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color">
-              <span class="order__check-box"></span>
-              Розовый
-            </label>
-          </div>
-          <div class="order__wrapp-color">
-            <label class="order__wrapp-description">
-              <input class="order__wrapp-check" type="checkbox" name="color">
-              <span class="order__check-box"></span>
-              Оранжевый
-            </label>
-          </div>
+          <ul class="order__color-list">
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color" checked>
+                <span class="order__check-box"></span>
+                Белый
+              </label>
+            </li>
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color" checked>
+                <span class="order__check-box"></span>
+                Серый
+              </label>
+            </li>
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color">
+                <span class="order__check-box"></span>
+                Тиффани
+              </label>
+            </li>
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color">
+                <span class="order__check-box"></span>
+                Черный
+              </label>
+            </li>
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color">
+                <span class="order__check-box"></span>
+                Розовый
+              </label>
+            </li>
+            <li class="order__color-item">
+              <label class="order__color-description">
+                <input class="order__color-check" type="checkbox" name="color">
+                <span class="order__check-box"></span>
+                Оранжевый
+              </label>
+            </li>
+          </ul>
         </div>
         <div class="requisites">
           <h4 class="requisites-title">ФИО</h4>
@@ -255,9 +264,10 @@
             </svg>
           </div>
           <div class="requisites-add__wrapp">
-            <label class="requisites-add__wrapp-description requisites-add__wrapp-description--mail" for="email">E-mail</label>
-            <input class="requisites-add__wrapp-field" id="email" type="email"
-              placeholder="Ваш Email*" name="requisites" required>
+            <label class="requisites-add__wrapp-description requisites-add__wrapp-description--mail"
+              for="email">E-mail</label>
+            <input class="requisites-add__wrapp-field" id="email" type="email" placeholder="Ваш Email*"
+              name="requisites" required>
             <svg class="requisites-add__wrapp-mail" width="32" height="21">
               <use xlink:href="./img/sprite.svg#mail-icon"></use>
             </svg>

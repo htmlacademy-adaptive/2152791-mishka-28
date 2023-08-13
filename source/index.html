@@ -73,9 +73,12 @@
       <div class="main-nav__tablet">
         <ul class="main-nav__tablet-upper">
           <li class="main-nav__tablet-item">
-            <svg class="main-nav__tablet-item-icon" width="113" height="46">
-              <use xlink:href="./img/sprite.svg#logo-tablet"></use>
-            </svg>
+            <a class="main-nav__tablet-link" href="index.html">
+              <svg class="main-nav__tablet-item-icon" width="113" height="46">
+                <use xlink:href="./img/sprite.svg#logo-tablet"></use>
+              </svg>
+              <span class="visually-hidden">Логотип магазина.</span>
+            </a>
           </li>
           <li class="main-nav__tablet-item">
             <a class="main-nav__tablet-link main-nav__tablet-link--search" href="#">
@@ -114,10 +117,12 @@
             <a class="main-nav__desktop-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__desktop-item">
-            <svg class="main-nav__desktop-logo" width="149" height="72">
-              <use xlink:href="./img/sprite.svg#logo-desktop"></use>
-            </svg>
-            <span class="visually-hidden">Логотип магазина.</span>
+            <a class="main-nav__desktop-link" href="index.html">
+              <svg class="main-nav__desktop-logo" width="149" height="72">
+                <use xlink:href="./img/sprite.svg#logo-desktop"></use>
+              </svg>
+              <span class="visually-hidden">Логотип магазина.</span>
+            </a>
           </li>
           <li class="main-nav__desktop-item">
             <a class="main-nav__desktop-link main-nav__desktop-link--search" href="#">
@@ -206,13 +211,13 @@
         </picture>
         <span class="hero__wrapper-price">Цена: 990 руб.</span>
         <button class="hero__wrapper-button button" type="button">Заказать</button>
-        <svg class="hero-wave-mobile" width="320" height="6">
+        <svg class="hero__wave-mobile" width="320" height="6">
           <use xlink:href="./img/sprite.svg#index-wave-mobile"></use>
         </svg>
-        <svg class="hero-wave-tablet" width="768" height="17">
+        <svg class="hero__wave-tablet" width="768" height="17">
           <use xlink:href="./img/sprite.svg#index-wave-tablet"></use>
         </svg>
-        <svg class="hero-wave-desktop" width="1050" height="23">
+        <svg class="hero__wave-desktop" width="1150" height="23">
           <use xlink:href="./img/sprite.svg#index-wave-desktop"></use>
         </svg>
       </div>
@@ -269,7 +274,8 @@
         <p class="reviews__wrapper-description">Я молодая мама, но всё равно фотографии не набирали и близко такого
           количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
           мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <span class="reviews__wrapper-author"><b>Анастасия Красильникова</b>@misssssiskras</span>
+        <p class="reviews__wrapper-author">Анастасия Красильникова</p>
+        <span class="reviews__wrapper-nick">@misssssiskras</span>
       </div>
       <div class="reviews__navigation">
         <div class="reviews__navigation-wrapper">
@@ -282,13 +288,13 @@
         </div>
         <button class="reviews__navigation-button button" type="button">Написать</button>
       </div>
-      <svg class="hero-wave-mobile" width="320" height="6">
+      <svg class="reviews__wave-mobile" width="320" height="6">
         <use xlink:href="./img/sprite.svg#index-wave-mobile"></use>
       </svg>
-      <svg class="hero-wave-tablet" width="768" height="17">
+      <svg class="reviews__wave-tablet" width="768" height="17">
         <use xlink:href="./img/sprite.svg#index-wave-tablet"></use>
       </svg>
-      <svg class="hero-wave-desktop" width="1050" height="23">
+      <svg class="reviews__wave-desktop" width="1150" height="23">
         <use xlink:href="./img/sprite.svg#index-wave-desktop"></use>
       </svg>
     </section>

@@ -78,6 +78,31 @@
 
 .reviews__wrapper-author {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: @black;
+  width: 260px;
+  line-height: 24px;
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 285px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 260px;
+    line-height: 24px;
+    margin-left: 225px;
+  }
+}
+
+.reviews__wrapper-nick {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: @black;
@@ -85,18 +110,15 @@
   line-height: 24px;
   margin-left: 30px;
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    width: 285px;
     margin-left: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 260px;
-    line-height: 24px;
     margin-left: 225px;
   }
 }
@@ -188,27 +210,28 @@
   }
 }
 
-.hero-wave-mobile {
+.reviews__wave-mobile {
   position: absolute;
-  bottom: -5px;
+  fill: @gray;
+  bottom: -7px;
   left: 0;
   z-index: 1;
-  fill: @gray;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.hero-wave-tablet {
+.reviews__wave-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
     position: absolute;
-    z-index: 1;
     fill: @gray;
-    bottom: -20px;
+    bottom: -7px;
     left: 0;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -216,14 +239,15 @@
   }
 }
 
-.hero-wave-desktop {
+.reviews__wave-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
+    display: block;
     position: absolute;
-    z-index: 1;
     fill: @gray;
-    bottom: -20px;
-    left: 0;
+    bottom: -73px;
+    left: 50px;
+    z-index: 1;
   }
 }
