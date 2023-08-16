@@ -1,4 +1,4 @@
-/* Mobile menu */
+/* MOBILE MENU */
 let toggle = document.querySelector('.main-nav__mobile-toggle');
 let list = document.querySelector('.main-nav__mobile--open');
 let close = document.querySelector('.main-nav__mobile-close');
