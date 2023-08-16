@@ -1,0 +1,149 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 143px;
+  }
+}
+
+.page-footer-icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 34px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    display: block;
+    fill: @black;
+    cursor: pointer;
+
+    &&:hover {
+      fill: #63d1bb;
+    }
+
+    &&:active {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    min-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__link {
+  width: 28px;
+  height: 22px;
+}
+
+.page-footer__link-icon {
+  width: 28px;
+  height: 22px;
+  fill: @black;
+
+  &&:hover {
+    fill: #63d1bb;
+  }
+
+  &&:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link:not(:first-child) {
+  margin-left: 29px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 34px;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__copyright:hover .page-footer__copyright-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__copyright:active .page-footer__copyright-icon {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.page-footer__copyright::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__copyright-text {
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.page-footer__copyright-icon {
+  width: 27px;
+  height: 34px;
+  fill: #63d1bb;
+  margin-left: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 25px;
+    margin-right: 53px;
+  }
+}
