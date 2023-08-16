@@ -1,5 +1,5 @@
 .button {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -24,5 +24,9 @@
   &&:active {
     background-color: @gray;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &&:disabled {
+    opacity: 0.9;
   }
 }

@@ -27,7 +27,7 @@
   height: 100%;
 }
 .page-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -137,14 +137,14 @@
   width: 320px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 1px 0px 0px #ececec;
+  box-shadow: 0 1px 0 0 #ececec;
   position: relative;
 }
 .main-nav__mobile-item:first-child {
   justify-content: flex-end;
 }
 .main-nav__mobile-link {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -167,7 +167,7 @@
   opacity: 0.3;
 }
 .main-nav__mobile-button {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -224,7 +224,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 0px 1px 0px 0px #ececec;
+    box-shadow: 0 1px 0 0 #ececec;
     z-index: 1;
   }
 }
@@ -264,6 +264,7 @@
     height: 18px;
     fill: #000000;
     opacity: 0.2;
+    cursor: pointer;
   }
 }
 @media (min-width: 768px) {
@@ -277,7 +278,7 @@
 }
 @media (min-width: 768px) {
   .main-nav__tablet-link {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -289,7 +290,7 @@
 }
 @media (min-width: 768px) {
   .main-nav__tablet-button {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -332,7 +333,7 @@
 }
 @media (min-width: 768px) {
   .main-nav__lower-link {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -348,7 +349,7 @@
 }
 @media (min-width: 768px) {
   .main-nav__lower-link--add {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -372,7 +373,7 @@
     min-height: 89px;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0px 1px 0px 0px #ececec;
+    box-shadow: 0 1px 0 0 #ececec;
     z-index: 1;
   }
 }
@@ -411,7 +412,7 @@
 }
 @media (min-width: 1150px) {
   .main-nav__desktop-link {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -427,9 +428,13 @@
     opacity: 0.3;
   }
 }
+.main-nav__desktop-link--add {
+  font-weight: 400;
+  color: #444444;
+}
 @media (min-width: 1150px) {
   .main-nav__desktop-button {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -500,21 +505,12 @@
   }
 }
 @media (min-width: 1150px) {
-  .main-nav__tablet-link-search {
-    width: 18px;
-    height: 18px;
-    fill: #000000;
-    cursor: pointer;
-    opacity: 0.2;
-  }
-}
-@media (min-width: 1150px) {
   .main-nav__desktop-link-basket {
     width: 21px;
     height: 18px;
     fill: #000000;
     margin-left: 31px;
-    margin-right: 30px;
+    margin-right: 32px;
     opacity: 0.2;
   }
 }
@@ -541,26 +537,8 @@
     margin-left: 502px;
   }
 }
-@media (min-width: 1150px) {
-  .main-nav__lower-link--add {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
-  }
-}
-@media (min-width: 1150px) {
-  .main-nav__desktop-link--add {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
-  }
-}
 .button {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -585,6 +563,9 @@
   background-color: #444444;
   color: rgba(255, 255, 255, 0.3);
 }
+.button.button:disabled {
+  opacity: 0.9;
+}
 .busket-overlay {
   position: fixed;
   overflow: auto;
@@ -608,7 +589,7 @@
   margin-left: -160px;
   margin-top: -160px;
   border: 1px solid #c6c6c6;
-  box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 @media (min-width: 768px) {
   .busket {
@@ -618,7 +599,7 @@
   }
 }
 .busket-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -638,7 +619,7 @@
   }
 }
 .busket-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -675,7 +656,7 @@
   align-items: center;
 }
 .busket__item-button {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 16px;
@@ -716,6 +697,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: #f1f1f1;
 }
 @media (min-width: 768px) {
@@ -757,11 +739,12 @@
   justify-content: center;
   align-items: center;
   min-height: 80px;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .page-footer__social {
     min-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1150px) {
@@ -793,6 +776,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 34px;
   position: relative;
   cursor: pointer;
@@ -830,7 +814,7 @@
   }
 }
 .page-footer__copyright-text {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
@@ -850,7 +834,7 @@
 }
 @media (min-width: 1150px) {
   .page-footer__copyright-icon {
-    margin-left: 29px;
+    margin-left: 25px;
     margin-right: 53px;
   }
 }
@@ -869,6 +853,12 @@
   background-image: url("../img/index/background-promo-mobile.png");
   background-position: 0 -16px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .promo__wrapper {
+    background-image: url("../img/index/background-promo-mobile@2x.png");
+    background-size: 320px auto;
+  }
+}
 @media (min-width: 768px) {
   .promo__wrapper {
     min-height: 680px;
@@ -876,13 +866,25 @@
     background-position: 0 -65px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .promo__wrapper {
+    background-image: url("../img/index/background-promo-tablet@2x.png");
+    background-size: 768px auto;
+  }
+}
 @media (min-width: 1150px) {
   .promo__wrapper {
     background-image: url("../img/index/background-promo-desktop.png");
   }
 }
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
+  .promo__wrapper {
+    background-image: url("../img/index/background-promo-desktop@2x.png");
+    background-size: 1150px auto;
+  }
+}
 .promo__wrapper-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -969,7 +971,7 @@
   }
 }
 .promo__choice-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -983,6 +985,8 @@
 @media (min-width: 768px) {
   .promo__choice-description {
     margin-bottom: 14px;
+    line-height: 30px;
+    margin-top: 6px;
   }
 }
 .promo__choice-lamp {
@@ -1096,7 +1100,7 @@
   }
 }
 .hero__upper-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -1121,7 +1125,7 @@
   }
 }
 .hero__upper-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -1157,7 +1161,7 @@
   position: relative;
 }
 .hero__wrapper-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -1186,7 +1190,7 @@
   }
 }
 .hero__wrapper-table {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -1212,7 +1216,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: -3px;
-  box-shadow: 0px 1px 0px 0px #ececec;
+  box-shadow: 0 1px 0 0 #ececec;
 }
 @media (min-width: 768px) {
   .hero__wrapper-line {
@@ -1241,11 +1245,6 @@
 @media (min-width: 1150px) {
   .hero__wrapper-cell:last-child {
     padding-bottom: 7px;
-    margin-right: 0;
-  }
-}
-@media (min-width: 1150px) {
-  .hero__wrapper-cell:last-child {
     width: 150px;
     margin-right: 11px;
   }
@@ -1274,7 +1273,7 @@
   }
 }
 .hero__wrapper-price {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -1353,7 +1352,7 @@
     display: block;
     position: absolute;
     fill: #444444;
-    bottom: -7px;
+    bottom: -20px;
     left: 50px;
     z-index: 1;
   }
@@ -1363,7 +1362,7 @@
   flex-direction: column;
 }
 .advantages-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -1480,6 +1479,7 @@
 }
 @media (min-width: 768px) {
   .advantages__item-icon-likes {
+    margin-top: 3px;
     margin-bottom: 21px;
   }
 }
@@ -1538,7 +1538,7 @@
   }
 }
 .advantages__item-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -1666,7 +1666,7 @@
   }
 }
 .reviews__wrapper-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -1693,7 +1693,7 @@
   }
 }
 .reviews__wrapper-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #444444;
@@ -1715,26 +1715,26 @@
   .reviews__wrapper-description {
     width: 805px;
     margin-left: 225px;
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 }
 .reviews__wrapper-author {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
   font-size: 17px;
   color: #000000;
   width: 260px;
   line-height: 24px;
   margin-left: 30px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .reviews__wrapper-author {
     font-size: 18px;
     width: 285px;
     margin-left: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 @media (min-width: 1150px) {
@@ -1745,8 +1745,8 @@
   }
 }
 .reviews__wrapper-nick {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
   font-size: 17px;
   color: #000000;
   width: 260px;
@@ -1905,13 +1905,13 @@
   position: relative;
 }
 .contacts__wrapper-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   margin-left: 30px;
   margin-top: 45px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -1937,8 +1937,8 @@
   content: "";
   height: 1px;
   width: 167px;
-  background-color: #62d1bA;
-  bottom: -53px;
+  background-color: #62d1ba;
+  bottom: -55px;
   left: 78px;
 }
 @media (min-width: 768px) {
@@ -1949,12 +1949,12 @@
 }
 @media (min-width: 1150px) {
   .contacts__wrapper-title::before {
-    bottom: -71px;
+    bottom: -68px;
     left: 76px;
   }
 }
 .contacts__wrapper-table {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -2019,8 +2019,8 @@
 @media (min-width: 768px) {
   .contacts__wrapper-line--last {
     position: relative;
-    top: -31px;
-    right: -350px;
+    top: -32px;
+    right: -333px;
   }
 }
 @media (min-width: 1150px) {
@@ -2140,7 +2140,7 @@
   }
 }
 .order__intro-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -2188,12 +2188,12 @@
   .order__intro-wave-desktop {
     display: block;
     position: absolute;
-    top: 160px;
+    top: 175px;
     left: 0;
   }
 }
 .order__intro-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   color: #444444;
   font-size: 13px;
@@ -2233,7 +2233,7 @@
   }
 }
 .order__type-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -2254,7 +2254,7 @@
 }
 @media (min-width: 1150px) {
   .order__type-title {
-    margin-left: 225px;
+    margin-left: 111px;
   }
 }
 .order__type-title::before {
@@ -2281,7 +2281,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 .order__type-item {
@@ -2293,7 +2293,6 @@
 @media (min-width: 768px) {
   .order__type-item {
     min-height: 52px;
-    margin-top: -3px;
   }
 }
 @media (min-width: 1150px) {
@@ -2308,7 +2307,7 @@
 @media (min-width: 768px) {
   .order__type-item:last-child {
     margin-bottom: 50px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 .order__radio {
@@ -2323,6 +2322,9 @@
   top: 0;
   left: 30px;
   background-image: url("../img/form/off.svg");
+}
+.order__radio-box.order__radio-box:disabled {
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .order__radio-box {
@@ -2341,7 +2343,7 @@
 }
 .order__radio-description {
   display: block;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -2349,13 +2351,12 @@
   margin-left: 30px;
   width: 200px;
   cursor: pointer;
-  margin-top: 3px;
 }
 @media (min-width: 768px) {
   .order__radio-description {
     font-size: 19px;
     line-height: 18px;
-    padding-left: 61px;
+    padding-left: 58px;
     margin-left: 50px;
     width: auto;
   }
@@ -2405,7 +2406,7 @@
   }
 }
 .order__color-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -2426,7 +2427,7 @@
 }
 @media (min-width: 1150px) {
   .order__color-title {
-    margin-left: 225px;
+    margin-left: 111px;
   }
 }
 .order__color-title::before {
@@ -2451,17 +2452,19 @@
 @media (min-width: 768px) {
   .order__color-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-left: 50px;
-    width: 550px;
+    margin-left: 92px;
+    width: 468px;
+    padding-bottom: 27px;
   }
 }
 @media (min-width: 1150px) {
   .order__color-list {
-    margin-top: 48px;
-    margin-left: 55px;
-    width: 800px;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 730px;
   }
 }
 .order__color-item {
@@ -2497,6 +2500,9 @@
   left: 30px;
   background-image: url("../img/form/off-ch.svg");
   background-repeat: no-repeat;
+}
+.order__check-box.order__check-box:disabled {
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .order__check-box {
@@ -2554,7 +2560,7 @@
 }
 .order__color-description {
   display: block;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -2566,7 +2572,7 @@
   .order__color-description {
     font-size: 19px;
     line-height: 18px;
-    padding-left: 80px;
+    padding-left: 82px;
   }
 }
 .requisites {
@@ -2579,7 +2585,7 @@
     display: grid;
     grid-template-columns: 70px 600px;
     padding: 50px;
-    row-gap: 22px;
+    row-gap: 24px;
     column-gap: 72px;
   }
 }
@@ -2589,12 +2595,12 @@
     padding-top: 55px;
     padding-left: 110px;
     padding-bottom: 50px;
-    row-gap: 26px;
+    row-gap: 28px;
     column-gap: 22px;
   }
 }
 .requisites-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -2671,7 +2677,7 @@
   }
 }
 .requisites__wrapp-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -2687,11 +2693,13 @@
 }
 .requisites__wrapp-field {
   width: 260px;
-  height: 50px;
+  height: 52px;
   border: none;
   border-bottom: 2px solid #000000;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  padding-top: 10px;
 }
 .requisites__wrapp-field.requisites__wrapp-field:hover {
   border-bottom: 2px solid #63d1bb;
@@ -2701,6 +2709,9 @@
 }
 .requisites__wrapp-field.requisites__wrapp-field:active {
   border-bottom: 2px solid #62d1ba;
+}
+.requisites__wrapp-field.requisites__wrapp-field:disabled {
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .requisites__wrapp-field {
@@ -2715,7 +2726,7 @@
 }
 @media (min-width: 768px) {
   .requisites__wrapp-field--name {
-    width: 410px;
+    width: 428px;
   }
 }
 @media (min-width: 1150px) {
@@ -2725,7 +2736,7 @@
 }
 @media (min-width: 768px) {
   .requisites__wrapp-field--surname {
-    width: 358px;
+    width: 375px;
   }
 }
 @media (min-width: 1150px) {
@@ -2735,7 +2746,7 @@
 }
 @media (min-width: 768px) {
   .requisites__wrapp-field--patronymic {
-    width: 358px;
+    width: 375px;
   }
 }
 @media (min-width: 1150px) {
@@ -2744,7 +2755,7 @@
   }
 }
 .requisites__wrapp-field::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -2771,10 +2782,10 @@
 }
 @media (min-width: 1150px) {
   .requisites-add {
-    height: 178px;
+    min-height: 178px;
     padding-left: 110px;
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 .requisites-add__wrapp {
@@ -2793,7 +2804,7 @@
   }
 }
 .requisites-add__wrapp-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -2814,7 +2825,7 @@
 }
 @media (min-width: 1150px) {
   .requisites-add__wrapp-description {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 }
 .requisites-add__wrapp-description::before {
@@ -2850,18 +2861,25 @@
 .requisites-add__wrapp-field.requisites-add__wrapp-field:active {
   border-bottom: 2px solid #62d1ba;
 }
+.requisites-add__wrapp-field.requisites-add__wrapp-field:disabled {
+  opacity: 0.9;
+}
 @media (min-width: 768px) {
   .requisites-add__wrapp-field {
     width: 501px;
+    height: 55px;
     padding-left: 18px;
+    padding-top: 5px;
     background-color: #f1f1f1;
     margin-left: 106px;
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 1150px) {
   .requisites-add__wrapp-field {
     width: 700px;
     margin-left: 55px;
+    margin-bottom: 30px;
   }
 }
 .requisites-add__wrapp-field:hover + .requisites-add__wrapp-tel {
@@ -2886,7 +2904,7 @@
   }
 }
 .requisites-add__wrapp-field::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -2951,7 +2969,7 @@
 }
 @media (min-width: 1150px) {
   .requisites-add__wrapp-mail {
-    top: 15px;
+    top: 20px;
     right: 230px;
   }
 }
@@ -2966,7 +2984,7 @@
   }
 }
 .additionally-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -2994,7 +3012,7 @@
   background-color: #63d1bb;
   width: 200px;
   height: 1px;
-  top: 8px;
+  top: 6px;
   right: 30px;
 }
 @media (min-width: 768px) {
@@ -3004,7 +3022,7 @@
 }
 .aditionally-form {
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 17px;
   width: 260px;
   height: 142px;
@@ -3021,6 +3039,9 @@
 }
 .aditionally-form.aditionally-form:active {
   border: 2px solid #62d1ba;
+}
+.aditionally-form.aditionally-form:disabled {
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .aditionally-form {
@@ -3043,7 +3064,7 @@
   }
 }
 .aditionally-form::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -3060,7 +3081,7 @@
   }
 }
 .additionally-footnote {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -3109,7 +3130,7 @@
   position: relative;
 }
 .catalog-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -3138,7 +3159,7 @@
   .catalog__intro-wave-tablet {
     display: block;
     position: absolute;
-    top: 140px;
+    top: 145px;
     left: 0;
   }
 }
@@ -3154,7 +3175,7 @@
   .catalog__intro-wave-desktop {
     display: block;
     position: absolute;
-    top: 160px;
+    top: 175px;
     left: 0;
   }
 }
@@ -3165,6 +3186,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .catalog__list {
@@ -3175,7 +3197,8 @@
 @media (min-width: 1150px) {
   .catalog__list {
     flex-direction: row;
-    padding-top: 130px;
+    padding-top: 128px;
+    padding-right: 0;
     margin-bottom: 7px;
   }
 }
@@ -3225,10 +3248,10 @@
   }
 }
 .catalog__link:hover .catalog__wrapp {
-  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .catalog__link:active .catalog__wrapp {
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 .catalog__item-image {
   display: block;
@@ -3250,7 +3273,7 @@
   flex-direction: column;
 }
 .catalog__wrapp-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -3279,8 +3302,18 @@
     margin-left: 27px;
   }
 }
+.catalog__wrapp-title--last {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1150px) {
+  .catalog__wrapp-title--last {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+}
 .catalog__wrapp-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
@@ -3338,7 +3371,7 @@
   }
 }
 .catalog__add-price {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -3400,7 +3433,7 @@
   }
 }
 .catalog__production-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -3497,7 +3530,7 @@
   }
 }
 .catalog__production-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;

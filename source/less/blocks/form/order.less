@@ -15,7 +15,7 @@
 }
 
 .order__intro-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -60,13 +60,13 @@
   @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
-    top: 160px;
+    top: 175px;
     left: 0;
   }
 }
 
 .order__intro-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   color: @gray;
   font-size: 13px;
@@ -100,12 +100,12 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-   flex-direction: row;
+    flex-direction: row;
   }
 }
 
 .order__type-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -124,7 +124,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 225px;
+    margin-left: 111px;
   }
 }
 
@@ -151,7 +151,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 
@@ -163,7 +163,6 @@
 
   @media (min-width: @tablet-width) {
     min-height: 52px;
-    margin-top: -3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -177,7 +176,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 
@@ -194,6 +193,10 @@
   left: 30px;
   background-image: url("../img/form/off.svg");
 
+  &&:disabled {
+    opacity: 0.9;
+  }
+
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
@@ -201,7 +204,7 @@
   }
 }
 
-.order__radio:checked+.order__radio-box {
+.order__radio:checked + .order__radio-box {
   background-image: url("../img/form/active.svg");
 
   @media (min-width: @tablet-width) {
@@ -211,7 +214,7 @@
 
 .order__radio-description {
   display: block;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -219,12 +222,11 @@
   margin-left: 30px;
   width: 200px;
   cursor: pointer;
-  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
     line-height: 18px;
-    padding-left: 61px;
+    padding-left: 58px;
     margin-left: 50px;
     width: auto;
   }
@@ -238,7 +240,7 @@
   }
 }
 
-.order__radio-description:hover .order__radio:checked+.order__radio-box {
+.order__radio-description:hover .order__radio:checked + .order__radio-box {
   background-image: url("../img/form/active-hover.svg");
 
   @media (min-width: @tablet-width) {
@@ -254,7 +256,7 @@
   }
 }
 
-.order__radio-description:active .order__radio:checked+.order__radio-box {
+.order__radio-description:active .order__radio:checked + .order__radio-box {
   background-image: url("../img/form/active-down.svg");
 
   @media (min-width: @tablet-width) {
@@ -275,7 +277,7 @@
 }
 
 .order__color-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -294,7 +296,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 225px;
+    margin-left: 111px;
   }
 }
 
@@ -319,16 +321,18 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-left: 50px;
-    width: 550px;
+    margin-left: 92px;
+    width: 468px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 48px;
-    margin-left: 55px;
-    width: 800px;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 730px;
   }
 }
 
@@ -368,6 +372,10 @@
   background-image: url("../img/form/off-ch.svg");
   background-repeat: no-repeat;
 
+  &&:disabled {
+    opacity: 0.9;
+  }
+
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
@@ -379,7 +387,7 @@
   }
 }
 
-.order__color-check:checked+.order__check-box {
+.order__color-check:checked + .order__check-box {
   background-image: url("../img/form/active-ch.svg");
 
   @media (min-width: @tablet-width) {
@@ -397,7 +405,7 @@
   }
 }
 
-.order__color-description:hover .order__color-check:checked+.order__check-box {
+.order__color-description:hover .order__color-check:checked + .order__check-box {
   background-image: url("../img/form/active-ch-hover.svg");
 
   @media (min-width: @tablet-width) {
@@ -413,7 +421,7 @@
   }
 }
 
-.order__color-description:active .order__color-check:checked+.order__check-box {
+.order__color-description:active .order__color-check:checked + .order__check-box {
   background-image: url("../img/form/active-ch-down.svg");
 
   @media (min-width: @tablet-width) {
@@ -423,7 +431,7 @@
 
 .order__color-description {
   display: block;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -434,7 +442,7 @@
   @media (min-width: @tablet-width) {
     font-size: 19px;
     line-height: 18px;
-    padding-left: 80px;
+    padding-left: 82px;
   }
 }
 
@@ -447,7 +455,7 @@
     display: grid;
     grid-template-columns: 70px 600px;
     padding: 50px;
-    row-gap: 22px;
+    row-gap: 24px;
     column-gap: 72px;
   }
 
@@ -456,13 +464,13 @@
     padding-top: 55px;
     padding-left: 110px;
     padding-bottom: 50px;
-    row-gap: 26px;
+    row-gap: 28px;
     column-gap: 22px;
   }
 }
 
 .requisites-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -537,7 +545,7 @@
 }
 
 .requisites__wrapp-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -553,11 +561,13 @@
 
 .requisites__wrapp-field {
   width: 260px;
-  height: 50px;
+  height: 52px;
   border: none;
   border-bottom: 2px solid @black;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  padding-top: 10px;
 
   &&:hover {
     border-bottom: 2px solid #63d1bb;
@@ -569,6 +579,10 @@
 
   &&:active {
     border-bottom: 2px solid #62d1ba;
+  }
+
+  &&:disabled {
+    opacity: 0.9;
   }
 
   @media (min-width: @tablet-width) {
@@ -583,9 +597,8 @@
 
 
 .requisites__wrapp-field--name {
-
   @media (min-width: @tablet-width) {
-    width: 410px;
+    width: 428px;
   }
 
   @media (min-width: @desktop-width) {
@@ -594,9 +607,8 @@
 }
 
 .requisites__wrapp-field--surname {
-
   @media (min-width: @tablet-width) {
-    width: 358px;
+    width: 375px;
   }
 
   @media (min-width: @desktop-width) {
@@ -605,9 +617,8 @@
 }
 
 .requisites__wrapp-field--patronymic {
-
   @media (min-width: @tablet-width) {
-    width: 358px;
+    width: 375px;
   }
 
   @media (min-width: @desktop-width) {
@@ -616,7 +627,7 @@
 }
 
 .requisites__wrapp-field::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -641,10 +652,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 178px;
+    min-height: 178px;
     padding-left: 110px;
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -665,7 +676,7 @@
 }
 
 .requisites-add__wrapp-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -684,7 +695,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 }
 
@@ -724,35 +735,43 @@
     border-bottom: 2px solid #62d1ba;
   }
 
+  &&:disabled {
+    opacity: 0.9;
+  }
+
   @media (min-width: @tablet-width) {
     width: 501px;
+    height: 55px;
     padding-left: 18px;
+    padding-top: 5px;
     background-color: #f1f1f1;
     margin-left: 106px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
     width: 700px;
     margin-left: 55px;
+    margin-bottom: 30px;
   }
 }
 
-.requisites-add__wrapp-field:hover+.requisites-add__wrapp-tel {
+.requisites-add__wrapp-field:hover + .requisites-add__wrapp-tel {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.requisites-add__wrapp-field:active+.requisites-add__wrapp-tel {
+.requisites-add__wrapp-field:active + .requisites-add__wrapp-tel {
   fill: #62d1ba;
   opacity: 1;
 }
 
-.requisites-add__wrapp-field:hover+.requisites-add__wrapp-mail {
+.requisites-add__wrapp-field:hover + .requisites-add__wrapp-mail {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.requisites-add__wrapp-field:active+.requisites-add__wrapp-mail {
+.requisites-add__wrapp-field:active + .requisites-add__wrapp-mail {
   fill: #62d1ba;
   opacity: 1;
 }
@@ -764,7 +783,7 @@
 }
 
 .requisites-add__wrapp-field::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -826,7 +845,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 15px;
+    top: 20px;
     right: 230px;
   }
 }
@@ -842,7 +861,7 @@
 }
 
 .additionally-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
@@ -869,7 +888,7 @@
   background-color: #63d1bb;
   width: 200px;
   height: 1px;
-  top: 8px;
+  top: 6px;
   right: 30px;
 
   @media (min-width: @tablet-width) {
@@ -879,7 +898,7 @@
 
 .aditionally-form {
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 17px;
   width: 260px;
   height: 142px;
@@ -898,6 +917,10 @@
 
   &&:active {
     border: 2px solid #62d1ba;
+  }
+
+  &&:disabled {
+    opacity: 0.9;
   }
 
   @media (min-width: @tablet-width) {
@@ -920,7 +943,7 @@
 }
 
 .aditionally-form::placeholder {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -938,7 +961,7 @@
 }
 
 .additionally-footnote {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

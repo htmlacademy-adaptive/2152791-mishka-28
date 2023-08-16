@@ -13,19 +13,34 @@
   background-image: url("../img/index/background-promo-mobile.png");
   background-position: 0 -16px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/background-promo-mobile@2x.png");
+    background-size: 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 680px;
     background-image: url("../img/index/background-promo-tablet.png");
     background-position: 0 -65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/background-promo-tablet@2x.png");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/index/background-promo-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/background-promo-desktop@2x.png");
+      background-size: 1150px auto;
+    }
   }
 }
 
 .promo__wrapper-title {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -109,7 +124,7 @@
 }
 
 .promo__choice-description {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -122,6 +137,8 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 14px;
+    line-height: 30px;
+    margin-top: 6px;
   }
 }
 

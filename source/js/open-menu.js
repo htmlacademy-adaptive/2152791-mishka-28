@@ -4,11 +4,11 @@ let list = document.querySelector('.main-nav__mobile--open');
 let close = document.querySelector('.main-nav__mobile-close');
 
 toggle.onclick = function () {
- list.classList.remove('hidden');
+  list.classList.remove('hidden');
 }
 
 close.onclick = function () {
- list.classList.add('hidden');
+  list.classList.add('hidden');
 }
 
 /* Modal mobile menu */
@@ -18,12 +18,12 @@ let overlay = document.querySelector('.busket-overlay');
 let add = document.querySelector('.busket-button');
 
 mobile_basket.onclick = function () {
- overlay.classList.remove('hidden');
- list.classList.add('hidden');
+  overlay.classList.remove('hidden');
+  list.classList.add('hidden');
 }
 
 add.onclick = function () {
- overlay.classList.add('hidden');
+  overlay.classList.add('hidden');
 }
 
 /* Modal tablet menu */
@@ -31,12 +31,12 @@ add.onclick = function () {
 let tablet_basket = document.querySelector('.main-nav__tablet-button');
 
 tablet_basket.onclick = function () {
- overlay.classList.remove('hidden');
- list.classList.add('hidden');
+  overlay.classList.remove('hidden');
+  list.classList.add('hidden');
 }
 
 add.onclick = function () {
- overlay.classList.add('hidden');
+  overlay.classList.add('hidden');
 }
 
 /* Modal desktop menu */
@@ -44,10 +44,10 @@ add.onclick = function () {
 let desktop_basket = document.querySelector('.main-nav__desktop-button');
 
 desktop_basket.onclick = function () {
- overlay.classList.remove('hidden');
- list.classList.add('hidden');
+  overlay.classList.remove('hidden');
+  list.classList.add('hidden');
 }
 
 add.onclick = function () {
- overlay.classList.add('hidden');
+  overlay.classList.add('hidden');
 }
