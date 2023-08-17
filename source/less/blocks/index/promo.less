@@ -1,8 +1,9 @@
 .promo {
   display: flex;
   flex-direction: column;
-  min-height: 506px;
+  min-height: 490px;
   position: relative;
+  background-color: #f1f1f1;
 }
 
 .promo__wrapper {
@@ -36,6 +37,26 @@
       background-image: url("../img/index/background-promo-desktop@2x.png");
       background-size: 1150px auto;
     }
+  }
+}
+
+.promo__wrapper::before {
+  position: absolute;
+  content: "";
+  height: 750px;
+  top: -65px;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: @white;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f9f9f9;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -60px;
   }
 }
 

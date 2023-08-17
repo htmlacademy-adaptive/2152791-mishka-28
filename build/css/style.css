@@ -523,8 +523,11 @@
     flex-wrap: wrap;
     min-height: 62px;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
   }
+}
+.main-nav__desktop-lower--form {
+  background-color: #f1f1f1;
 }
 @media (min-width: 1150px) {
   .main-nav__desktop-item-lower:first-child {
@@ -562,6 +565,9 @@
 .button.button:active {
   background-color: #444444;
   color: rgba(255, 255, 255, 0.3);
+}
+.button.button:focus {
+  border: 2px solid #63d1bb;
 }
 .button.button:disabled {
   opacity: 0.9;
@@ -699,6 +705,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f1f1f1;
+  position: relative;
 }
 @media (min-width: 768px) {
   .page-footer {
@@ -751,6 +758,22 @@
   .page-footer__social {
     min-height: 28px;
     margin-bottom: 10px;
+  }
+}
+.page-footer__social::before {
+  position: absolute;
+  content: "";
+  height: 160px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .page-footer__social::before {
+    height: 143px;
   }
 }
 .page-footer__link {
@@ -842,8 +865,9 @@
 .promo {
   display: flex;
   flex-direction: column;
-  min-height: 506px;
+  min-height: 490px;
   position: relative;
+  background-color: #f1f1f1;
 }
 .promo__wrapper {
   display: flex;
@@ -881,6 +905,27 @@
   .promo__wrapper {
     background-image: url("../img/index/background-promo-desktop@2x.png");
     background-size: 1150px auto;
+  }
+}
+.promo__wrapper::before {
+  position: absolute;
+  content: "";
+  height: 750px;
+  top: -65px;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #ffffff;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .promo__wrapper::before {
+    background-color: #f9f9f9;
+  }
+}
+@media (min-width: 1150px) {
+  .promo__wrapper::before {
+    top: -60px;
   }
 }
 .promo__wrapper-title {
@@ -1105,7 +1150,7 @@
   font-size: 25px;
   line-height: 30px;
   margin-left: 30px;
-  margin-top: -58px;
+  margin-top: -41px;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -2165,6 +2210,29 @@
     margin-bottom: 79px;
   }
 }
+.order__intro-title::before {
+  position: absolute;
+  content: "";
+  height: 176px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .order__intro-title::before {
+    top: -65px;
+    height: 226px;
+  }
+}
+@media (min-width: 1150px) {
+  .order__intro-title::before {
+    top: -62px;
+    height: 255px;
+  }
+}
 .order__intro-wave-tablet {
   display: none;
 }
@@ -2326,6 +2394,9 @@
 .order__radio-box.order__radio-box:disabled {
   opacity: 0.9;
 }
+.order__radio-box.order__radio-box:focus {
+  opacity: 0.5;
+}
 @media (min-width: 768px) {
   .order__radio-box {
     width: 52px;
@@ -2430,6 +2501,28 @@
     margin-left: 111px;
   }
 }
+.order__color-title::after {
+  position: absolute;
+  content: "";
+  height: 176px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #ffffff;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .order__color-title::after {
+    height: 304px;
+    background-color: #f1f1f1;
+  }
+}
+@media (min-width: 1150px) {
+  .order__color-title::after {
+    height: 228px;
+  }
+}
 .order__color-title::before {
   position: absolute;
   content: "";
@@ -2503,6 +2596,9 @@
 }
 .order__check-box.order__check-box:disabled {
   opacity: 0.9;
+}
+.order__check-box.order__check-box:focus {
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   .order__check-box {
@@ -2796,6 +2892,23 @@
 @media (min-width: 768px) {
   .requisites-add__wrapp {
     flex-direction: row;
+  }
+}
+.requisites-add__wrapp::before {
+  position: absolute;
+  content: "";
+  height: 176px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .requisites-add__wrapp::before {
+    top: -50px;
+    height: 158px;
+    background-color: #f1f1f1;
   }
 }
 @media (min-width: 768px) {
@@ -3150,6 +3263,29 @@
     font-size: 53px;
     line-height: 57px;
     padding: 40px 195px 93px 345px;
+  }
+}
+.catalog-title::before {
+  position: absolute;
+  content: "";
+  height: 176px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .catalog-title::before {
+    top: -65px;
+    height: 226px;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog-title::before {
+    top: -62px;
+    height: 255px;
   }
 }
 .catalog__intro-wave-tablet {

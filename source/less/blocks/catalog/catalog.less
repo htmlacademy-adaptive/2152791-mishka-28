@@ -28,6 +28,28 @@
   }
 }
 
+.catalog-title::before {
+  position: absolute;
+  content: "";
+  height: 176px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #f1f1f1;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    top: -65px;
+    height: 226px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -62px;
+    height: 255px;
+  }
+}
+
 .catalog__intro-wave-tablet {
   display: none;
 

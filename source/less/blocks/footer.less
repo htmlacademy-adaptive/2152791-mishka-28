@@ -3,6 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f1f1f1;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -54,6 +55,22 @@
   @media (min-width: @desktop-width) {
     min-height: 28px;
     margin-bottom: 10px;
+  }
+}
+
+.page-footer__social::before {
+  position: absolute;
+  content: "";
+  height: 160px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #f1f1f1;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    height: 143px;
   }
 }
 
