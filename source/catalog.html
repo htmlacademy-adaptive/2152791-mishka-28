@@ -157,13 +157,7 @@
 
   <main class="page-main">
     <section class="catalog">
-      <h1 class="catalog-title">Каталог товаров</h1>
-      <svg class="catalog__intro-wave-tablet" width="768" height="24">
-        <use xlink:href="./img/sprite.svg#tablet-wave"></use>
-      </svg>
-      <svg class="catalog__intro-wave-desktop" width="1150" height="34">
-        <use xlink:href="./img/sprite.svg#desktop-wave"></use>
-      </svg>
+      <h1 class="catalog__title">Каталог товаров</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
@@ -233,9 +227,10 @@
           </a>
         </li>
       </ul>
-      <div class="catalog__production">
-        <h3 class="catalog__production-title">Процесс производства</h3>
-        <svg class="catalog__camera" width="32" height="22">
+      </section>
+      <section class="production">
+        <h3 class="production__title">Процесс производства</h3>
+        <svg class="production__camera" width="32" height="22">
           <use xlink:href="./img/sprite.svg#camera-icon"></use>
         </svg>
         <picture>
@@ -243,35 +238,37 @@
             srcset="./img/catalog/video-desktop.png, ./img/catalog/video-desktop@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="./img/catalog/video-tablet.png, ./img/catalog/video-tablet@2x.png 2x">
-          <img class="catalog__production-image" src="./img/catalog/video-mobile.png"
+          <img class="production__image" src="./img/catalog/video-mobile.png"
             srcset="./img/catalog/video-mobile@2x.png 2x" width="260" height="150" alt="Видео-гайд.">
         </picture>
-        <svg class="catalog__video" width="100" height="76">
-          <use xlink:href="./img/sprite.svg#video-icon"></use>
-        </svg>
-        <p class="catalog__production-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+        <button class="production__button" type="button">
+          <svg class="production__video" width="100" height="76">
+            <use xlink:href="./img/sprite.svg#video-icon"></use>
+          </svg>
+        </button>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о
           том, как
           появляются наши товары.</p>
-        <button class="catalog__production-button button" type="submit">Сделать заказ</button>
+        <button class="production__button button" type="submit">Сделать заказ</button>
       </div>
     </section>
-    <section class="busket-overlay hidden">
-      <div class="busket">
-        <h4 class="busket-title">Добавить в корзину</h4>
-        <p class="busket-description">Выберите размер:</p>
-        <ul class="busket__list">
-          <li class="busket__item">
-            <button class="busket__item-button busket__item-button--active" type="button">S</button>
+    <section class="basket hidden">
+      <div class="basket__main">
+        <h4 class="basket__title">Добавить в корзину</h4>
+        <p class="basket__description">Выберите размер:</p>
+        <ul class="basket__list">
+          <li class="basket__item">
+            <button class="basket__item-button basket__item-button--active" type="button">S</button>
           </li>
-          <li class="busket__item">
-            <button class="busket__item-button" type="button">M</button>
+          <li class="basket__item">
+            <button class="basket__item-button" type="button">M</button>
           </li>
-          <li class="busket__item">
-            <button class="busket__item-button" type="button">L</button>
+          <li class="basket__item">
+            <button class="basket__item-button" type="button">L</button>
           </li>
         </ul>
-        <button class="busket-button button" type="submit">Добавить</button>
+        <button class="basket__button button" type="button">Добавить</button>
       </div>
     </section>
   </main>

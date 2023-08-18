@@ -2,6 +2,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background-image: url("../img/icons/small-mobile-wave.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+    margin-bottom: 68px;
+    background-image: url("../img/icons/small-tablet-wave.svg");
+    background-position: 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 87px;
+    background-image: url("../img/icons/small-desktop-wave.svg");
+    background-position: 50px 0;
+  }
 }
 
 .contacts__wrapper {
@@ -141,7 +157,7 @@
   }
 }
 
-.contacts-image {
+.contacts__image {
   margin-top: 60px;
   display: block;
 
@@ -161,7 +177,7 @@
   }
 }
 
-.contacts-icon {
+.contacts__icon {
   position: absolute;
   top: 458px;
   left: 138px;
@@ -181,7 +197,7 @@
   }
 }
 
-.contacts-flag {
+.contacts__flag {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -199,7 +215,7 @@
   }
 }
 
-.contacts-button {
+.contacts__button {
   margin-left: 30px;
   margin-top: 42px;
   margin-bottom: 39px;

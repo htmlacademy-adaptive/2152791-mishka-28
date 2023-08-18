@@ -138,7 +138,6 @@
   align-items: center;
   width: 260px;
   min-height: 52px;
-  border: 1px solid #ececec;
   margin-left: 30px;
   position: relative;
   margin-bottom: 38px;
@@ -153,6 +152,23 @@
   }
 }
 
+.reviews__navigation-arrow {
+  width: 130px;
+  height: 52px;
+  border: 2px solid #ececec;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
 .reviews__navigation-icon {
   fill: @black;
   cursor: pointer;
@@ -163,22 +179,6 @@
 
   &&:active {
     opacity: 0.3;
-  }
-}
-
-.reviews__navigation-icon:first-child {
-  margin-left: 38px;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 0;
-  }
-}
-
-.reviews__navigation-icon:last-child {
-  margin-right: 42px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 70px;
   }
 }
 
@@ -207,47 +207,5 @@
     position: absolute;
     top: 80px;
     right: 50px;
-  }
-}
-
-.reviews__wave-mobile {
-  position: absolute;
-  fill: @gray;
-  bottom: -7px;
-  left: 0;
-  z-index: 1;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.reviews__wave-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
-    fill: @gray;
-    bottom: -7px;
-    left: 0;
-    z-index: 1;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.reviews__wave-desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    position: absolute;
-    fill: @gray;
-    bottom: -73px;
-    left: 50px;
-    z-index: 1;
   }
 }
