@@ -5,6 +5,8 @@
 <head>
   <meta charset="utf-8">
   <title>Mishka demo</title>
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="./img/favicons/favicon.ico">
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
@@ -22,7 +24,7 @@
         <picture>
           <source media="(min-width: 1150px)" width="149" height="72" srcset="./img/icons/logo-desktop.svg">
           <source media="(min-width: 768px)" width="113" height="46" srcset="./img/icons/logo-tablet.svg">
-          <img src="./img/icons/logo-mobile.svg" width="86" height="35" alt="Лого магазина.">
+          <img class="header__link-image" src="./img/icons/logo-mobile.svg" width="86" height="35" alt="Лого магазина.">
         </picture>
       </a>
       <button class="header__toggle visually-hidden" type="button">
@@ -84,10 +86,8 @@
         </a>
       </div>
       <picture>
-        <source media="(min-width: 1150px)" width="1150" height="34"
-          srcset="./img/icons/wave-desktop.svg">
-        <source media="(min-width: 768px)" width="768" height="24"
-          srcset="./img/icons/wave-tablet.svg">
+        <source media="(min-width: 1150px)" width="1150" height="34" srcset="./img/icons/wave-desktop.svg">
+        <source media="(min-width: 768px)" width="768" height="24" srcset="./img/icons/wave-tablet.svg">
         <img class="promo__wave">
       </picture>
     </section>
@@ -114,6 +114,12 @@
           </tr>
         </table>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)"
+            srcset="./img/index/basket-desktop.webp, ./img/index/basket-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/index/basket-tablet.webp, ./img/index/basket-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/index/basket-mobile.webp, ./img/index/basket-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)"
             srcset="./img/index/basket-desktop.png, ./img/index/basket-desktop@2x.png 2x">
           <source media="(min-width: 768px)"
