@@ -1,13 +1,12 @@
 .header {
-  width: 320px;
-
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff 53%, #f9f9f9 47%);
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 1150px;
-  }
+.header--add {
+  background: linear-gradient(to bottom, #ffffff 53%, #f1f1f1 47%);
 }
 
 .header__wrapper {
@@ -17,9 +16,16 @@
   min-height: 79px;
   box-shadow: 0 1px 0 0 #ececec;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     box-shadow: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }
 
@@ -84,6 +90,22 @@
   }
 }
 
+.header__navigation::before {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    left: 0;
+    position: absolute;
+    content: "";
+    height: 1px;
+    top: 88px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
+}
+
 .header__main-list {
   margin: 0;
   padding: 0;
@@ -92,6 +114,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 320px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -159,8 +182,8 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 320px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -251,30 +274,14 @@
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
     order: 3;
     min-height: 79px;
+    overflow: hidden;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
-  }
-}
-
-.header__add-list::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    width: 768px;
-    height: 1px;
-    top: 0;
-    left: -490px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1150px;
-    left: 0;
   }
 }
 

@@ -1,12 +1,25 @@
 .color {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+}
+
+.color__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     flex-direction: row;
-    background-color: #f1f1f1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }
 
@@ -125,7 +138,7 @@
   }
 }
 
-.color__check:checked + .color__check-box {
+.color__check:checked+.color__check-box {
   background-image: url("../img/form/active-ch.svg");
 
   @media (min-width: @tablet-width) {
@@ -143,7 +156,7 @@
   }
 }
 
-.color__description:hover .color__check:checked + .color__check-box {
+.color__description:hover .color__check:checked+.color__check-box {
   background-image: url("../img/form/active-ch-hover.svg");
 
   @media (min-width: @tablet-width) {
@@ -159,7 +172,7 @@
   }
 }
 
-.color__description:active .color__check:checked + .color__check-box {
+.color__description:active .color__check:checked+.color__check-box {
   background-image: url("../img/form/active-ch-down.svg");
 
   @media (min-width: @tablet-width) {

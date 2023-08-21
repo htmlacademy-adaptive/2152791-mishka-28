@@ -2,20 +2,26 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     display: grid;
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-bottom: 50px;
     grid-template-columns: 70px 600px;
-    padding: 50px;
     row-gap: 24px;
     column-gap: 72px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1150px;
     grid-template-columns: 70px 900px;
     padding-top: 55px;
-    padding-left: 110px;
     padding-bottom: 50px;
+    padding-left: 225px;
     row-gap: 28px;
     column-gap: 22px;
   }
@@ -112,6 +118,10 @@
 }
 
 .requisites__wrapp-field {
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
   width: 260px;
   height: 52px;
   border: none;

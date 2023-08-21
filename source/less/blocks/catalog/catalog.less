@@ -1,9 +1,24 @@
 /* CATALOG */
 
 .catalog {
+  width: 100%;
+  background: linear-gradient(to top, #ffffff 82%, #f1f1f1 75%);
+}
+
+.catalog__container {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .catalog__title {
@@ -128,6 +143,10 @@
   margin-bottom: 6px;
   margin-left: 28px;
   width: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 
   &&:hover {
     opacity: 0.6;

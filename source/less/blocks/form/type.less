@@ -3,9 +3,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }
 

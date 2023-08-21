@@ -1,15 +1,27 @@
 .footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  }
+
+.footer__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f1f1f1;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     min-height: 143px;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
   }
 }
 

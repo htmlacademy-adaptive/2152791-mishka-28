@@ -18,7 +18,7 @@
 
 <body class="page-body">
 
-  <header class="header no-js">
+  <header class="header header--add no-js">
     <div class="header__wrapper">
       <a class="header__link" href="index.html">
         <picture>
@@ -48,6 +48,7 @@
           </li>
           <li class="header__user-item">
             <a class="header__user-link" href="#">
+              <span class="visually-hidden">Корзина.</span>
               <svg class="header__user-icon" width="21" height="18">
                 <use xlink:href="./img/sprite.svg#basket-icon"></use>
               </svg>Корзина: пока пуста</a>
@@ -70,15 +71,17 @@
 
   <main class="page-main">
     <section class="order">
-      <h1 class="order__title">Вязание на заказ</h1>
-      <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-        заказа и
-        мы свяжемся с вами, чтобы уточнить детали.</p>
-      <picture>
-        <source media="(min-width: 1150px)" width="1150" height="34" srcset="./img/icons/wave-desktop.svg">
-        <source media="(min-width: 768px)" width="768" height="24" srcset="./img/icons/wave-tablet.svg">
-        <img class="order__wave">
-      </picture>
+      <div class="order__container">
+        <h1 class="order__title">Вязание на заказ</h1>
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+          заказа и
+          мы свяжемся с вами, чтобы уточнить детали.</p>
+        <picture>
+          <source media="(min-width: 1150px)" width="1150" height="34" srcset="./img/icons/wave-desktop.svg">
+          <source media="(min-width: 768px)" width="768" height="24" srcset="./img/icons/wave-tablet.svg">
+          <img class="order__wave">
+        </picture>
+      </div>
     </section>
     <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
       <section class="type">
@@ -101,51 +104,53 @@
         </ul>
       </section>
       <section class="color">
-        <h3 class="color__title">Цвет</h3>
-        <ul class="color__list">
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color" checked>
-              <span class="color__check-box"></span>
-              Белый
-            </label>
-          </li>
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color" checked>
-              <span class="color__check-box"></span>
-              Серый
-            </label>
-          </li>
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color">
-              <span class="color__check-box"></span>
-              Тиффани
-            </label>
-          </li>
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color">
-              <span class="color__check-box"></span>
-              Черный
-            </label>
-          </li>
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color">
-              <span class="color__check-box"></span>
-              Розовый
-            </label>
-          </li>
-          <li class="color__item">
-            <label class="color__description">
-              <input class="color__check" type="checkbox" name="color">
-              <span class="color__check-box"></span>
-              Оранжевый
-            </label>
-          </li>
-        </ul>
+        <div class="color__container">
+          <h3 class="color__title">Цвет</h3>
+          <ul class="color__list">
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color" checked>
+                <span class="color__check-box"></span>
+                Белый
+              </label>
+            </li>
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color" checked>
+                <span class="color__check-box"></span>
+                Серый
+              </label>
+            </li>
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color">
+                <span class="color__check-box"></span>
+                Тиффани
+              </label>
+            </li>
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color">
+                <span class="color__check-box"></span>
+                Черный
+              </label>
+            </li>
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color">
+                <span class="color__check-box"></span>
+                Розовый
+              </label>
+            </li>
+            <li class="color__item">
+              <label class="color__description">
+                <input class="color__check" type="checkbox" name="color">
+                <span class="color__check-box"></span>
+                Оранжевый
+              </label>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="requisites">
         <h4 class="requisites__title">ФИО</h4>
@@ -166,20 +171,23 @@
         </div>
       </section>
       <section class="data">
-        <div class="data__wrapp">
-          <label class="data__wrapp-description" for="tel">Тел</label>
-          <input class="data__wrapp-field" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="requisites"
-            required>
-          <svg class="data__wrapp-tel" width="25" height="24">
-            <use xlink:href="./img/sprite.svg#phone-icon"></use>
-          </svg>
-        </div>
-        <div class="data__wrapp">
-          <label class="data__wrapp-description requisites-add__wrapp-description--mail" for="email">E-mail</label>
-          <input class="data__wrapp-field" id="email" type="email" placeholder="Ваш Email*" name="requisites" required>
-          <svg class="data__wrapp-mail" width="32" height="21">
-            <use xlink:href="./img/sprite.svg#mail-icon"></use>
-          </svg>
+        <div class="data__container">
+          <div class="data__wrapp">
+            <label class="data__wrapp-description" for="tel">Тел</label>
+            <input class="data__wrapp-field" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="requisites"
+              required>
+            <svg class="data__wrapp-tel" width="25" height="24">
+              <use xlink:href="./img/sprite.svg#phone-icon"></use>
+            </svg>
+          </div>
+          <div class="data__wrapp">
+            <label class="data__wrapp-description requisites-add__wrapp-description--mail" for="email">E-mail</label>
+            <input class="data__wrapp-field" id="email" type="email" placeholder="Ваш Email*" name="requisites"
+              required>
+            <svg class="data__wrapp-mail" width="32" height="21">
+              <use xlink:href="./img/sprite.svg#mail-icon"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="additionally">
@@ -194,35 +202,37 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo">
-      <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
-      <svg class="footer__icon" width="102" height="34">
-        <use xlink:href="./img/sprite.svg#footer-logo"></use>
-      </svg>
-    </a>
-    <div class="footer__social">
-      <a class="footer__social-link footer__social-link--vk" href="#">
-        <span class="visually-hidden">Вконтакте.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#vk-icon"></use>
-        </svg></a>
-      <a class="footer__social-link footer__social-link--youtube" href="#">
-        <span class="visually-hidden">Ютуб.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#youtube-icon"></use>
-        </svg></a>
-      <a class="footer__social-link footer__social-link--telegram" href="#">
-        <span class="visually-hidden">Телеграм.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#tg-icon"></use>
-        </svg></a>
-    </div>
-    <div class="footer__copyright">
-      <p class="footer__copyright-text">Разработано</p>
-      <svg class="footer__copyright-icon" width="27" height="32">
-        <use xlink:href="./img/sprite.svg#copyright-icon"></use>
-      </svg>
-      <span class="visually-hidden">Разработано академией.</span>
+    <div class="footer__container">
+      <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+        <svg class="footer__icon" width="102" height="34">
+          <use xlink:href="./img/sprite.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <div class="footer__social">
+        <a class="footer__social-link footer__social-link--vk" href="#">
+          <span class="visually-hidden">Вконтакте.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#vk-icon"></use>
+          </svg></a>
+        <a class="footer__social-link footer__social-link--youtube" href="#">
+          <span class="visually-hidden">Ютуб.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#youtube-icon"></use>
+          </svg></a>
+        <a class="footer__social-link footer__social-link--telegram" href="#">
+          <span class="visually-hidden">Телеграм.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#tg-icon"></use>
+          </svg></a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Разработано</p>
+        <svg class="footer__copyright-icon" width="27" height="32">
+          <use xlink:href="./img/sprite.svg#copyright-icon"></use>
+        </svg>
+        <span class="visually-hidden">Разработано академией.</span>
+      </div>
     </div>
   </footer>
 

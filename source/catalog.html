@@ -18,7 +18,7 @@
 
 <body class="page-body">
 
-  <header class="header no-js">
+  <header class="header header--add no-js">
     <div class="header__wrapper">
       <a class="header__link" href="index.html">
         <picture>
@@ -48,6 +48,7 @@
           </li>
           <li class="header__user-item">
             <a class="header__user-link" href="#">
+              <span class="visually-hidden">Корзина.</span>
               <svg class="header__user-icon" width="21" height="18">
                 <use xlink:href="./img/sprite.svg#basket-icon"></use>
               </svg>Корзина: пока пуста</a>
@@ -70,81 +71,83 @@
 
   <main class="page-main">
     <section class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
-      <picture>
-        <source media="(min-width: 1150px)" width="1150" height="34" srcset="./img/icons/wave-desktop.svg">
-        <source media="(min-width: 768px)" width="768" height="24" srcset="./img/icons/wave-tablet.svg">
-        <img class="catalog__wave">
-      </picture>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <picture>
-              <source media="(min-width: 1150px)"
-                srcset="./img/catalog/rabbit-desktop.png, ./img/catalog/rabbit-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/rabbit-tablet.png, ./img/catalog/rabbit-tablet@2x.png 2x">
-              <img class="catalog__item-image" src="./img/catalog/rabbit-mobile.png"
-                srcset="./img/catalog/rabbit-mobile@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
-            </picture>
-            <div class="catalog__wrapp">
-              <h2 class="catalog__wrapp-title">Зайчик-попрыгайчик</h2>
-              <p class="catalog__wrapp-description">Рост 30 см, вес 200 г</p>
-              <div class="catalog__add">
-                <span class="catalog__add-price">1 200 руб.</span>
-                <svg class="catalog__add-icon" width="21" height="18">
-                  <use xlink:href="./img/sprite.svg#basket-icon"></use>
-                </svg>
+      <div class="catalog__container">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <picture>
+          <source media="(min-width: 1150px)" width="1150" height="34" srcset="./img/icons/wave-desktop.svg">
+          <source media="(min-width: 768px)" width="768" height="24" srcset="./img/icons/wave-tablet.svg">
+          <img class="catalog__wave">
+        </picture>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/rabbit-desktop.png, ./img/catalog/rabbit-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/rabbit-tablet.png, ./img/catalog/rabbit-tablet@2x.png 2x">
+                <img class="catalog__item-image" src="./img/catalog/rabbit-mobile.png"
+                  srcset="./img/catalog/rabbit-mobile@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              </picture>
+              <div class="catalog__wrapp">
+                <h2 class="catalog__wrapp-title">Зайчик-попрыгайчик</h2>
+                <p class="catalog__wrapp-description">Рост 30 см, вес 200 г</p>
+                <div class="catalog__add">
+                  <span class="catalog__add-price">1 200 руб.</span>
+                  <svg class="catalog__add-icon" width="21" height="18">
+                    <use xlink:href="./img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <picture>
-              <source media="(min-width: 1150px)"
-                srcset="./img/catalog/basket-desktop.png, ./img/catalog/basket-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/basket-tablet.png, ./img/catalog/basket-tablet@2x.png 2x">
-              <img class="catalog__item-image" src="./img/catalog/basket-mobile.png"
-                srcset="./img/catalog/basket-mobile@2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
-            </picture>
-            <div class="catalog__wrapp">
-              <h2 class="catalog__wrapp-title">Корзинка для белья</h2>
-              <p class="catalog__wrapp-description">Диаметр 15 см, высота 10 см</p>
-              <div class="catalog__add">
-                <span class="catalog__add-price">690 руб.</span>
-                <svg class="catalog__add-icon" width="21" height="18">
-                  <use xlink:href="./img/sprite.svg#basket-icon"></use>
-                </svg>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/basket-desktop.png, ./img/catalog/basket-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/basket-tablet.png, ./img/catalog/basket-tablet@2x.png 2x">
+                <img class="catalog__item-image" src="./img/catalog/basket-mobile.png"
+                  srcset="./img/catalog/basket-mobile@2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
+              </picture>
+              <div class="catalog__wrapp">
+                <h2 class="catalog__wrapp-title">Корзинка для белья</h2>
+                <p class="catalog__wrapp-description">Диаметр 15 см, высота 10 см</p>
+                <div class="catalog__add">
+                  <span class="catalog__add-price">690 руб.</span>
+                  <svg class="catalog__add-icon" width="21" height="18">
+                    <use xlink:href="./img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <picture>
-              <source media="(min-width: 1150px)"
-                srcset="./img/catalog/big-basket-desktop.png, ./img/catalog/big-basket-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/big-basket-tablet.png, ./img/catalog/big-basket-tablet@2x.png 2x">
-              <img class="catalog__item-image" src="./img/catalog/big-basket-mobile.png"
-                srcset="./img/catalog/big-basket-mobile@2x.png 2x" width="260" height="195"
-                alt="Большая корзинка для игрушек.">
-            </picture>
-            <div class="catalog__wrapp">
-              <h2 class="catalog__wrapp-title catalog__wrapp-title--last">Большая корзинка для игрушек</h2>
-              <p class="catalog__wrapp-description">Диаметр 30 см, высота 30 см</p>
-              <div class="catalog__add catalog__add--last">
-                <span class="catalog__add-price">1 500 руб.</span>
-                <svg class="catalog__add-icon" width="21" height="18">
-                  <use xlink:href="./img/sprite.svg#basket-icon"></use>
-                </svg>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/catalog/big-basket-desktop.png, ./img/catalog/big-basket-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/big-basket-tablet.png, ./img/catalog/big-basket-tablet@2x.png 2x">
+                <img class="catalog__item-image" src="./img/catalog/big-basket-mobile.png"
+                  srcset="./img/catalog/big-basket-mobile@2x.png 2x" width="260" height="195"
+                  alt="Большая корзинка для игрушек.">
+              </picture>
+              <div class="catalog__wrapp">
+                <h2 class="catalog__wrapp-title catalog__wrapp-title--last">Большая корзинка для игрушек</h2>
+                <p class="catalog__wrapp-description">Диаметр 30 см, высота 30 см</p>
+                <div class="catalog__add catalog__add--last">
+                  <span class="catalog__add-price">1 500 руб.</span>
+                  <svg class="catalog__add-icon" width="21" height="18">
+                    <use xlink:href="./img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="production">
       <h3 class="production__title">Процесс производства</h3>
@@ -168,7 +171,7 @@
         о
         том, как
         появляются наши товары.</p>
-      <button class="production__button button" type="submit">Сделать заказ</button>
+      <button class="production__button button" type="button">Сделать заказ</button>
       </div>
     </section>
     <section class="basket hidden">
@@ -192,35 +195,37 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo">
-      <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
-      <svg class="footer__icon" width="102" height="34">
-        <use xlink:href="./img/sprite.svg#footer-logo"></use>
-      </svg>
-    </a>
-    <div class="footer__social">
-      <a class="footer__social-link footer__social-link--vk" href="#">
-        <span class="visually-hidden">Вконтакте.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#vk-icon"></use>
-        </svg></a>
-      <a class="footer__social-link footer__social-link--youtube" href="#">
-        <span class="visually-hidden">Ютуб.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#youtube-icon"></use>
-        </svg></a>
-      <a class="footer__social-link footer__social-link--telegram" href="#">
-        <span class="visually-hidden">Телеграм.</span>
-        <svg class="footer__social-icon" width="28" height="22">
-          <use xlink:href="./img/sprite.svg#tg-icon"></use>
-        </svg></a>
-    </div>
-    <div class="footer__copyright">
-      <p class="footer__copyright-text">Разработано</p>
-      <svg class="footer__copyright-icon" width="27" height="32">
-        <use xlink:href="./img/sprite.svg#copyright-icon"></use>
-      </svg>
-      <span class="visually-hidden">Разработано академией.</span>
+    <div class="footer__container">
+      <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+        <svg class="footer__icon" width="102" height="34">
+          <use xlink:href="./img/sprite.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <div class="footer__social">
+        <a class="footer__social-link footer__social-link--vk" href="#">
+          <span class="visually-hidden">Вконтакте.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#vk-icon"></use>
+          </svg></a>
+        <a class="footer__social-link footer__social-link--youtube" href="#">
+          <span class="visually-hidden">Ютуб.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#youtube-icon"></use>
+          </svg></a>
+        <a class="footer__social-link footer__social-link--telegram" href="#">
+          <span class="visually-hidden">Телеграм.</span>
+          <svg class="footer__social-icon" width="28" height="22">
+            <use xlink:href="./img/sprite.svg#tg-icon"></use>
+          </svg></a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Разработано</p>
+        <svg class="footer__copyright-icon" width="27" height="32">
+          <use xlink:href="./img/sprite.svg#copyright-icon"></use>
+        </svg>
+        <span class="visually-hidden">Разработано академией.</span>
+      </div>
     </div>
   </footer>
 
