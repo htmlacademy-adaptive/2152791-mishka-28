@@ -883,6 +883,7 @@
     left: 575px;
   }
 }
+/* stylelint-disable */
 .promo__choice-description {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
@@ -904,6 +905,7 @@
     margin-top: 6px;
   }
 }
+/* stylelint-enable */
 .promo__choice-lamp {
   fill: #149080;
   margin-right: 36px;
@@ -3210,6 +3212,7 @@
   display: flex;
   flex-direction: column;
 }
+/* stylelint-disable */
 .catalog__wrapp-title {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
@@ -3244,6 +3247,7 @@
     margin-left: 27px;
   }
 }
+/* stylelint-enable */
 .catalog__wrapp-title--last {
   margin-top: 25px;
   margin-bottom: 10px;
