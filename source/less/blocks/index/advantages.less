@@ -1,9 +1,26 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  background-image: url("../img/icons/small-mobile-wave.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-image: url("../img/icons/small-tablet-wave.svg");
+    background-position: 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    background-image: url("../img/icons/small-desktop-wave.svg");
+    background-position: 50px 0;
+  }
 }
 
-.advantages-title {
+.advantages__title {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;

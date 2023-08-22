@@ -1,8 +1,24 @@
 .promo {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.promo__container {
   display: flex;
   flex-direction: column;
-  min-height: 506px;
+  min-height: 490px;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin-top: -13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .promo__wrapper {
@@ -10,30 +26,30 @@
   flex-direction: column;
   align-items: center;
   min-height: 373px;
-  background-image: url("../img/index/background-promo-mobile.png");
+  background-image: url("../img/index/background-promo-mobile.jpg");
   background-position: 0 -16px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/background-promo-mobile@2x.png");
+    background-image: url("../img/index/background-promo-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
   @media (min-width: @tablet-width) {
     min-height: 680px;
-    background-image: url("../img/index/background-promo-tablet.png");
+    background-image: url("../img/index/background-promo-tablet.jpg");
     background-position: 0 -65px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/background-promo-tablet@2x.png");
+      background-image: url("../img/index/background-promo-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/index/background-promo-desktop.png");
+    background-image: url("../img/index/background-promo-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/background-promo-desktop@2x.png");
+      background-image: url("../img/index/background-promo-desktop@2x.jpg");
       background-size: 1150px auto;
     }
   }
@@ -90,7 +106,9 @@
   bottom: -13px;
   left: 0;
   z-index: 1;
+  text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding-left: 36px;
@@ -104,7 +122,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 37px;
     width: 525px;
-    min-height: 116px;
+    min-height: 118px;
   }
 }
 
@@ -129,13 +147,15 @@
   font-size: 19px;
   line-height: 24px;
   color: @white;
-  width: 90px;
+  width: 138px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: start;
-  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
     margin-bottom: 14px;
     line-height: 30px;
     margin-top: 6px;
@@ -194,30 +214,17 @@
   opacity: 0.3;
 }
 
-.promo-wave-tablet {
-  display: none;
+.promo__wave {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    z-index: 1;
+    bottom: -10px;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.promo-wave-desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    z-index: 1;
+    bottom: -20px;
   }
 }

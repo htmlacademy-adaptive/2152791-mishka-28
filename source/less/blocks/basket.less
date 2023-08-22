@@ -1,4 +1,4 @@
-.busket-overlay {
+.basket {
   position: fixed;
   overflow: auto;
   left: 0;
@@ -9,7 +9,7 @@
   z-index: 3;
 }
 
-.busket {
+.basket__main {
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -31,7 +31,11 @@
   }
 }
 
-.busket-title {
+.hidden {
+  display: none;
+}
+
+.basket__title {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -51,7 +55,7 @@
   }
 }
 
-.busket-description {
+.basket__description {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -67,7 +71,7 @@
   }
 }
 
-.busket__list {
+.basket__list {
   padding: 0;
   margin: 0;
   margin-bottom: 31px;
@@ -83,15 +87,15 @@
   }
 }
 
-.busket__item {
+.basket__item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.busket__item-button {
+.basket__item-button {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   width: 82px;
@@ -112,11 +116,12 @@
   }
 }
 
-.busket__item-button--active {
+.basket__item-button--active {
   border: 2px solid #63d1bb;
 }
 
-.busket-button {
+.basket__button {
+  font-weight: 700;
   margin-left: 30px;
   margin-bottom: 46px;
   background-color: #63d1bb;
