@@ -1,6 +1,8 @@
 .data {
-  width: 100%;
-  background-color: #f1f1f1;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
 }
 
 .data__container {
@@ -129,22 +131,22 @@
   }
 }
 
-.data__wrapp-field:hover+.data__wrapp-tel {
+.data__wrapp-field:hover + .data__wrapp-tel {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.data__wrapp-field:active+.data__wrapp-tel {
+.data__wrapp-field:active + .data__wrapp-tel {
   fill: #62d1ba;
   opacity: 1;
 }
 
-.data__wrapp-field:hover+.data__wrapp-mail {
+.data__wrapp-field:hover + .data__wrapp-mail {
   fill: #63d1bb;
   opacity: 1;
 }
 
-.data__wrapp-field:active+.data__wrapp-mail {
+.data__wrapp-field:active + .data__wrapp-mail {
   fill: #62d1ba;
   opacity: 1;
 }

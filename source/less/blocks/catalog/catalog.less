@@ -2,7 +2,15 @@
 
 .catalog {
   width: 100%;
-  background: linear-gradient(to top, #ffffff 82%, #f1f1f1 75%);
+  background: linear-gradient(to top, #ffffff 87.7%, #f1f1f1 75%);
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to top, #ffffff 89.6%, #f1f1f1 75%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(to top, #ffffff 83%, #f1f1f1 75%);
+  }
 }
 
 .catalog__container {
@@ -33,13 +41,13 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding: 36px 195px 73px 197px;
+    padding: 25px 195px 73px 197px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding: 40px 195px 93px 345px;
+    padding: 22px 195px 93px 345px;
   }
 }
 
@@ -54,12 +62,12 @@
 
   @media (min-width: @tablet-width) {
     padding: 50px;
-    padding-top: 80px;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    padding-top: 128px;
+    padding-top: 130px;
     padding-right: 0;
     margin-bottom: 7px;
   }
@@ -284,10 +292,11 @@
   left: 0;
 
   @media (min-width: @tablet-width) {
-    top: 150px;
+    top: 135px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 170px;
+    top: 160px;
+    width: 1150px;
   }
 }

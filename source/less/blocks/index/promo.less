@@ -13,6 +13,7 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    margin-top: -13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,30 +26,30 @@
   flex-direction: column;
   align-items: center;
   min-height: 373px;
-  background-image: url("../img/index/background-promo-mobile.png");
+  background-image: url("../img/index/background-promo-mobile.jpg");
   background-position: 0 -16px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/background-promo-mobile@2x.png");
+    background-image: url("../img/index/background-promo-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
   @media (min-width: @tablet-width) {
     min-height: 680px;
-    background-image: url("../img/index/background-promo-tablet.png");
+    background-image: url("../img/index/background-promo-tablet.jpg");
     background-position: 0 -65px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/background-promo-tablet@2x.png");
+      background-image: url("../img/index/background-promo-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/index/background-promo-desktop.png");
+    background-image: url("../img/index/background-promo-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/background-promo-desktop@2x.png");
+      background-image: url("../img/index/background-promo-desktop@2x.jpg");
       background-size: 1150px auto;
     }
   }
@@ -121,7 +122,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 37px;
     width: 525px;
-    min-height: 116px;
+    min-height: 118px;
   }
 }
 
@@ -148,15 +149,13 @@
   color: @white;
   width: 138px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: start;
-  text-align: start;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
     margin-bottom: 14px;
     line-height: 30px;
     margin-top: 6px;
