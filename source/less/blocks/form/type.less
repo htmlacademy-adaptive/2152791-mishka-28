@@ -113,15 +113,15 @@
     opacity: 0.9;
   }
 
-  &&:focus {
-    opacity: 0.5;
-  }
-
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
     background-image: url("../img/form/off-big.svg");
   }
+}
+
+.type__radio:focus + .type__radio-box {
+  outline: 3px solid #63d1bb;
 }
 
 .type__radio:checked + .type__radio-box {
