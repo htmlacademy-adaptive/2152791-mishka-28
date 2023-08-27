@@ -123,10 +123,6 @@
     opacity: 0.9;
   }
 
-  &&:focus {
-    opacity: 0.5;
-  }
-
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
@@ -136,6 +132,10 @@
   @media (min-width: @desktop-width) {
     top: -4px;
   }
+}
+
+.color__check:focus + .color__check-box {
+  outline: 3px solid #63d1bb;
 }
 
 .color__check:checked + .color__check-box {

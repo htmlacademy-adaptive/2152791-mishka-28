@@ -64,6 +64,13 @@
   text-align: center;
   margin-top: 73px;
   margin-bottom: 0;
+  vertical-align: bottom;
+
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -229,6 +236,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    bottom: -20px;
+    bottom: -18px;
+    left: 13px;
   }
 }
